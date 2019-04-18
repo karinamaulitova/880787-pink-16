@@ -1,3 +1,23 @@
-body {
-  background: lavender;
-}
+@import "scaffolding";
+@import "page-header";
+@import "main-nav";
+@import "site-list";
+@import "download-app";
+@import "market-list";
+@import "features";
+@import "features-list";
+@import "reviews";
+@import "rates";
+@import "contacts";
+@import "promo";
+@import "heading-block";
+@import "gallery";
+@import "photo";
+@import "catch-phrase";
+@import "photo-submit";
+@import "filters-list";
+@import "page-footer";
+@import "contest-description";
+@import "contest-form";
+@import "fieldset-checkbox";
+@import "fieldset-radio";

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic");
+@import "variables";
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  color: $menu-bg-color;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
