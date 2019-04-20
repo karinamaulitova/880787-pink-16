@@ -1,8 +1,14 @@
-@import "variables";
+@import "../variables";
+
+.heading-block {
+  min-height: 250px;
+}
 
 .heading-block__title {
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
   color: $menu-text-color;
+
+  padding-top: 35px;
 }

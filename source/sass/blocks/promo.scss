@@ -1,0 +1,35 @@
+@import "../variables";
+
+.promo {
+  background: url("../../img/bg-back-mobile@1x.jpg") center no-repeat;
+  background-color: $main-page-bg-color;
+  background-size: cover;
+}
+
+.promo__image {
+  margin-bottom: -7px;
+}
+
+.promo__wrapper {
+  background-color: $main-page-bg-color;
+}
+
+.promo__button {
+  display: inline-block;
+
+  color: $menu-text-color;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+
+  padding: 20px 39px 17px 40px;
+  margin-top: 28px;
+}
+
+.promo__availability {
+  color: $menu-text-color;
+}

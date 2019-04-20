@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 .photo {
   background-color: $bg-grey-color;
@@ -12,10 +12,11 @@
 
 .photo__publication-time {
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .photo__like-quantity {
   color: $pink-text-color;
   font-size: 12px;
+  text-transform: uppercase;
 }
-

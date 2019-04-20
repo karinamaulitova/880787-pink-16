@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 .contacts__heading {
   font-size: 24px;
@@ -7,7 +7,7 @@
 }
 
 .contacts__item {
- font-size: 18px;
+  font-size: 18px;
   line-height: normal;
   font-weight: bold;
 }

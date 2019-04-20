@@ -1,7 +1,9 @@
-@import "variables";
+@import "../variables";
 
 .site-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-list__link {
@@ -14,4 +16,7 @@
 
 .site-list__item {
   text-align: center;
+  border: 1px solid #000000;
+  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  padding: 15px 0;
 }
