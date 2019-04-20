@@ -1,0 +1,33 @@
+@import "../variables";
+
+.filters-list {
+  list-style: none;
+}
+
+.filters-list__submit-button {
+  color: $pink-text-color;
+  background-color: $bg-grey-color;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  border: solid 3px $pink-text-color;
+  border-radius: 50px;
+
+  padding: 20px 91px;
+}
+
+.filters-list__reset-button {
+  color: $reset-button-color;
+  background-color: $bg-grey-color;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  border: solid 3px $reset-button-color;
+  border-radius: 50px;
+
+  padding: 20px 105px;
+}

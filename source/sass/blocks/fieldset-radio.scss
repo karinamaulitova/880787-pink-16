@@ -1,0 +1,15 @@
+@import "../variables";
+
+.fieldset-radio {
+  background-color: $bg-grey-color;
+  border: none;
+}
+
+.fieldset-radio__legend {
+  color: $pink-text-color;
+}
+
+.fieldset-radio__label {
+  font-size: 18px;
+  line-height: 30px;
+}

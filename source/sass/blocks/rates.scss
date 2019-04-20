@@ -1,0 +1,22 @@
+@import "../variables";
+
+.rates__list {
+  list-style: none;
+}
+
+.rates__header {
+  background-color: $menu-bg-color;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: $menu-text-color;
+}
+
+.rates__item {
+  line-height: 30px;
+}
+
+.rates__cost {
+  font-size: 24px;
+  font-weight: 300;
+}

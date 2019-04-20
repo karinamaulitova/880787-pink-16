@@ -1,0 +1,11 @@
+@import "../variables";
+
+.fieldset-checkbox {
+  background-color: $bg-grey-color;
+  border: none;
+}
+
+.fieldset-checkbox__label {
+  font-size: 18px;
+  line-height: 30px;
+}

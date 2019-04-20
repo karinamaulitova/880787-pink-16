@@ -1,0 +1,22 @@
+@import "../variables";
+
+.photo {
+  background-color: $bg-grey-color;
+  text-align: left;
+}
+
+.photo__author {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.photo__publication-time {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo__like-quantity {
+  color: $pink-text-color;
+  font-size: 12px;
+  text-transform: uppercase;
+}

@@ -1,3 +1,22 @@
-body {
-  background: lavender;
-}
+@import "scaffolding";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/market-list";
+@import "blocks/features";
+@import "blocks/features-list";
+@import "blocks/reviews";
+@import "blocks/rates";
+@import "blocks/contacts";
+@import "blocks/promo";
+@import "blocks/heading-block";
+@import "blocks/gallery";
+@import "blocks/photo";
+@import "blocks/catch-phrase";
+@import "blocks/photo-submit";
+@import "blocks/filters-list";
+@import "blocks/page-footer";
+@import "blocks/contest-description";
+@import "blocks/contest-form";
+@import "blocks/fieldset-checkbox";
+@import "blocks/fieldset-radio";
