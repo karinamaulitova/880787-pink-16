@@ -1,5 +1,9 @@
 @import "../variables";
 
+.rates {
+  background-color: $bg-grey-color;
+}
+
 .rates__list {
   list-style: none;
 }
@@ -9,14 +13,32 @@
 
   font-size: 18px;
   font-weight: bold;
+  text-transform: uppercase;
   color: $menu-text-color;
+}
+
+.rates__table {
+  background-color: $menu-text-color;
+
+  width: 280px;
 }
 
 .rates__item {
   line-height: 30px;
+  text-transform: uppercase;
+
+  text-align: left;
 }
 
 .rates__cost {
   font-size: 24px;
   font-weight: 300;
+}
+
+.rates__yes-svg {
+  fill: #3dc644;
+}
+
+.rates__no-svg {
+  fill: #f25b26;
 }

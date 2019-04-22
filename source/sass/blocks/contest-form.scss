@@ -7,6 +7,45 @@
   text-transform: uppercase;
 }
 
+.contest-form__fieldset {
+  border: none;
+}
+
 .contest-form__legend {
   color: $pink-text-color;
+  text-transform: uppercase;
+}
+
+.contest-form__text-input {
+  font-size: 18px;
+  line-height: 30px;
+
+  padding: 16px 22px 13px;
+
+  border: solid 2px #e5e5e5;
+  border-radius: 5px;
+}
+
+.contest-form__textarea {
+  font-size: 18px;
+  line-height: 30px;
+
+  padding: 23px 19px;
+}
+
+.contest-form__button {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $menu-text-color;
+  background-color: #2aab6d;
+  border-radius: 10px;
+  border: none;
+
+  padding: 23px 45px;
+
+  cursor: pointer;
 }
