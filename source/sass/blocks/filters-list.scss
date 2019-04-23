@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+.filters-list__button {
+  border: none;
+  background-color: transparent;
+}
+
 .filters-list__submit-button {
   color: $pink-text-color;
   background-color: $bg-grey-color;
