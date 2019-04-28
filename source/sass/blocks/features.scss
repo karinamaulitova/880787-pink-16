@@ -1,3 +1,5 @@
+@import "../variables";
+
 .features {
   background: #ffffff;
 }
@@ -10,6 +12,12 @@
   width: 100%;
 }
 
+.features__tagline-1-wrapper,
+.features__tagline-2-wrapper {
+  width: 220px;
+  margin: 0 auto;
+}
+
 .features__tagline {
   font-size: 24px;
   font-weight: 300;
@@ -17,4 +25,21 @@
 
 .features__image {
   margin-bottom: -6px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__tagline {
+    margin: 0;
+  }
+
+  .features__tagline-1-wrapper {
+    width: 600px;
+  }
+
+  .features__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
 }

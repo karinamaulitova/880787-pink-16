@@ -2,4 +2,23 @@
 
 .main-nav {
   background-color: $menu-bg-color;
+
+  width: 320px;
+  margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+//@media (min-width: $desktop-width) {
+//  .main-nav__wrapper {
+//    display: flex;
+//    justify-content: space-between;
+//    width: 923px;
+//    margin: 0 auto;
+//  }
+//}

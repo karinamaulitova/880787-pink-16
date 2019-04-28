@@ -1,5 +1,17 @@
 @import "../variables";
 
+.contacts {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts__heading-wrapper {
+  width: 228px;
+  margin: 0 auto;
+
+  display: inline-block;
+}
+
 .contacts__heading {
   font-size: 24px;
   font-weight: 300;
@@ -31,4 +43,43 @@
 
   position: relative;
   z-index: 2;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .contacts__address-wrapper {
+    justify-content: flex-end;
+    align-self: center;
+
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 940px;
+  }
+
+  .contacts__address-wrapper {
+    margin: 0;
+
+    order: 2;
+  }
+
+  .contacts__tel-wrapper {
+    order: 1;
+  }
+
+  .contacts__email-wrapper {
+    order: 3;
+  }
+
 }

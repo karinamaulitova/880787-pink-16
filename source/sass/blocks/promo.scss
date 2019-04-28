@@ -33,3 +33,34 @@
 .promo__availability {
   color: $menu-text-color;
 }
+
+.promo__phrase {
+  display: none;
+
+  font-size: 40px;
+  font-weight: 300;
+  line-height: normal;
+  color: $menu-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__phrase {
+    display: block;
+  }
+
+  .promo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 400px;
+
+    background-color: transparent;
+  }
+
+  .promo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

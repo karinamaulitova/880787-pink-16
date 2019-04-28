@@ -1,3 +1,5 @@
+@import "../variables";
+
 .reviews__list {
   list-style: none;
 }
@@ -11,4 +13,22 @@
   font-style: normal;
   font-weight: bold;
   color: #000000;
+}
+
+.reviews__author-info {
+display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__blockquote {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column-reverse;
+  }
+
+
+  .reviews__author-info {
+    display: block;
+  }
 }
