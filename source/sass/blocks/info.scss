@@ -4,31 +4,42 @@
   display: none;
 }
 
+
 @media (min-width: $tablet-width) {
+
   .info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
   }
 
-  .info__wrapper {
-    width: 296px;
+  .info__container {
+    display: flex;
+    width: $tablet-width;
+    margin: 0 auto;
   }
+
 
   .info__heading {
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
+    text-align: left;
     color: $text-black-color;
+  }
+
+  .info__text {
+    text-align: left;
   }
 
   .info__source-link {
     color: $pink-text-color;
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .info__wrapper {
-    width: 404px;
+  .info__container {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }
+

@@ -5,4 +5,10 @@
 
   display: flex;
   justify-content: space-around;
+  align-items: center;
+
+  padding-left: 0;
+  width: calc(100% - 57px * 2);
+  margin: 32px 57px 28px;
 }
+

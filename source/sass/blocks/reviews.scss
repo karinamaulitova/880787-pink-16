@@ -1,5 +1,15 @@
 @import "../variables";
 
+.reviews {
+  padding-top: 49px;
+
+  position: relative;
+  z-index: 1;
+  top: -40px;
+
+  background: $menu-text-color;
+}
+
 .reviews__list {
   list-style: none;
 }
@@ -20,6 +30,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__container {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
   .reviews__blockquote {
     display: flex;
     flex-wrap: wrap;
@@ -27,8 +42,14 @@
     flex-direction: column-reverse;
   }
 
-
   .reviews__author-info {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }

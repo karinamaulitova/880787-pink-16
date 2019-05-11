@@ -25,12 +25,17 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
-    justify-content: flex-end;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin: 0 173px 0 129px;
   }
 
   .site-list__item {
     border: none;
     box-shadow: none;
+  }
+
+  .site-list__link {
+    font-weight: normal;
+    line-height: 18px;
   }
 }
