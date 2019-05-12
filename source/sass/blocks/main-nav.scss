@@ -5,6 +5,14 @@
 
   width: 100%;
   margin: 0 auto;
+
+  position: relative;
+}
+
+.main-nav__button {
+  position: absolute;
+  right: 20px;
+  top: -50px;
 }
 
 @media (min-width: $tablet-width) {

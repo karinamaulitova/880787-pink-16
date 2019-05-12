@@ -347,3 +347,10 @@ template {
 [hidden] {
   display: none;
 }
+
+/*
+* Reset paragraph margin
+*/
+p {
+  margin: 0;
+}

@@ -16,6 +16,10 @@
     margin: 0 auto;
   }
 
+  .info__wrapper {
+    text-align: left;
+  }
+
 
   .info__heading {
     font-size: 30px;
@@ -25,13 +29,8 @@
     color: $text-black-color;
   }
 
-  .info__text {
-    text-align: left;
-  }
-
   .info__source-link {
     color: $pink-text-color;
-    text-align: left;
   }
 }
 

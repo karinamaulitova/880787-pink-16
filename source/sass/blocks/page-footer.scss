@@ -1,6 +1,6 @@
 @import "../variables";
 
-.page-footer {
+.page-footer__wrapper {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -25,11 +25,22 @@
 
 @media (min-width: $tablet-width) {
   .page-footer--index {
-    display: flex;
-    justify-content: space-between;
+    display: block;
   }
 
-  .page-footer {
+  .page-footer__wrapper {
     flex-direction: row;
+  }
+
+  .page-footer__container {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }

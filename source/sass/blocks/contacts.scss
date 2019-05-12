@@ -39,13 +39,16 @@
   &::after {
 
     content: "";
-    background: url("../../img/bg-triangle-white-footer.svg") no-repeat center;
-    background-size: cover;
+
+    background: url("../../img/bg-triangle-white-footer.svg") no-repeat center top;
+    background-size: 100% auto;
+
     position: absolute;
-    bottom: -45px;
+    bottom: -54px;
     left: 0;
     right: 0;
-    height: 45px;
+
+    height: 55px;
   }
 }
 
@@ -81,6 +84,11 @@
 
     margin: 0 auto;
   }
+
+  .contacts__bg-triangle-wrapper::after {
+    bottom: -89px;
+    height: 90px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -101,5 +109,10 @@
 
   .contacts__email-wrapper {
     order: 3;
+  }
+
+  .contacts__bg-triangle-wrapper::after {
+    bottom: -134px;
+    height: 135px;
   }
 }

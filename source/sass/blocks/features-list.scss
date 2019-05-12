@@ -22,5 +22,19 @@
 @media (min-width: $desktop-width) {
   .features-list {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .features-list__item {
+    width: 292px;
+    box-sizing: border-box;
+
+    padding: 0 26px;
+
+    text-align: center;
+  }
+
+  .features-list__heading {
+    font-size: 30px;
   }
 }
