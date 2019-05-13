@@ -1,39 +1,24 @@
 @import "../variables";
 
-.contest-form__label {
-  color: $pink-text-color;
-  line-height: 30px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
 .contest-form__fieldset {
   border: none;
 }
 
-.contest-form__legend {
-  color: $pink-text-color;
-  text-transform: uppercase;
+.contest-form__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.contest-form__text-input {
-  font-size: 18px;
-  line-height: 30px;
-
-  padding: 16px 22px 13px;
-
-  border: solid 2px #e5e5e5;
-  border-radius: 5px;
+.contest-form__fieldset-wrapper--app,
+.contest-form__fieldset-wrapper--achievements {
+  background-color: $bg-grey-color;
 }
 
-.contest-form__textarea {
-  font-size: 18px;
-  line-height: 30px;
+.contest-form__submit-wrapper {
+  display: flex;
+  flex-direction: column;
 
-  border: solid 2px #e5e5e5;
-  border-radius: 5px;
-
-  padding: 23px 19px;
+  margin-bottom: 45px;
 }
 
 .contest-form__button {
@@ -51,4 +36,86 @@
   padding: 23px 45px;
 
   cursor: pointer;
+
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contest-form__container {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .contest-form__fieldset {
+    margin-top: 62px;
+  }
+
+  .contest-form__fieldset-wrapper--achievements,
+  .contest-form__fieldset-wrapper--app {
+    background-color: $menu-text-color;
+  }
+
+  .contest-form__fieldset-wrapper--name {
+    order: 1;
+  }
+
+  .contest-form__fieldset-wrapper--app {
+    order: 2;
+  }
+
+  .contest-form__fieldset-wrapper--contacts {
+    order: 3;
+  }
+
+  .contest-form__fieldset-wrapper--achievements {
+    order: 4;
+  }
+
+  .contest-form__fieldset-wrapper--feedback {
+    order: 5;
+  }
+
+  .contest-form__submit-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-form__container {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .contest-form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contest-form__fieldset-wrapper--name {
+    width: 50%;
+  }
+
+  .contest-form__fieldset-wrapper--app {
+    width: 50%;
+  }
+
+  .contest-form__fieldset-wrapper--contacts {
+    width: 100%;
+  }
+
+  .contest-form__fieldset-wrapper--achievements {
+    width: 100%;
+  }
+
+  .contest-form__fieldset-wrapper--feedback {
+    width: 100%;
+  }
+
+  .contest-form__submit-wrapper {
+    width: 100%;
+  }
 }

@@ -1,10 +1,38 @@
 @import "../variables";
 
-.fieldset-checkbox {
-  background-color: $bg-grey-color;
+.fieldset-checkbox__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .fieldset-checkbox__label {
   font-size: 18px;
   line-height: 30px;
+}
+
+.fieldset-checkbox__legend {
+  color: $pink-text-color;
+  text-transform: uppercase;
+
+  line-height: 30px;
+
+  padding: 0 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-checkbox {
+    border: solid 2px #e5e5e5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-checkbox__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .fieldset-checkbox__label {
+    width: 33%;
+    text-align: left;
+  }
 }

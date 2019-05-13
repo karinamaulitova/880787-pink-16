@@ -1,16 +1,26 @@
 @import "../variables";
 
-.fieldset-radio {
-  background-color: $bg-grey-color;
-  border: none;
+.fieldset-radio__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .fieldset-radio__legend {
   color: $pink-text-color;
   text-transform: uppercase;
+
+  line-height: 30px;
+
+  padding: 0 25px;
 }
 
 .fieldset-radio__label {
   font-size: 18px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-radio {
+    border: solid 2px #e5e5e5;
+  }
 }

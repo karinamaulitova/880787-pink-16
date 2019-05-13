@@ -17,6 +17,10 @@
 
 .rates__list {
   list-style: none;
+
+  display: flex;
+
+  overflow-y: hidden;
 }
 
 .rates__header {
@@ -25,6 +29,7 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   color: $menu-text-color;
 }
 
@@ -32,6 +37,22 @@
   background-color: $menu-text-color;
 
   width: 280px;
+  height: 100%;
+
+  border-collapse: collapse;
+}
+
+.rates__table td,
+.rates__table th {
+  border: 2px solid $border-color;
+}
+
+.rates__table td:first-of-type {
+  border-right: none;
+}
+
+.rates__table td:last-of-type {
+  border-left: none;
 }
 
 .rates__item {
@@ -39,6 +60,13 @@
   text-transform: uppercase;
 
   text-align: left;
+
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.rates__item--mobile-hidden {
+  display: none;
 }
 
 .rates__cost {
@@ -52,4 +80,63 @@
 
 .rates__no-svg {
   fill: #f25b26;
+}
+
+@media (min-width: $tablet-width) {
+  .rates__container {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .rates__item {
+    text-align: center;
+  }
+
+  .rates__item--mobile-hidden {
+    display: table;
+
+    align-self: flex-end;
+  }
+
+  .rates__table {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .rates__table-item--hidden {
+    display: none;
+  }
+
+  .rates__toggles {
+    display: none;
+  }
+
+  .rates__table--legend td {
+    text-align: left;
+    text-transform: none;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+  }
+
+  .rates__no-svg {
+    margin: 10px 0;
+  }
+
+  .rates__yes-svg {
+    margin: 15px 0 10px;
+  }
+
+  .rates__table td:first-of-type {
+    border: 2px solid $border-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__container {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }
