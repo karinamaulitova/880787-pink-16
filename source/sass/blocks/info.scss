@@ -1,0 +1,42 @@
+@import "../variables";
+
+.info {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .info {
+    display: block;
+  }
+
+  .info__container {
+    display: flex;
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .info__wrapper {
+    text-align: left;
+  }
+
+
+  .info__heading {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: left;
+    color: $text-black-color;
+  }
+
+  .info__source-link {
+    color: $pink-text-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info__container {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}

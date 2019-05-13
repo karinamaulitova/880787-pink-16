@@ -2,6 +2,17 @@
 
 .rates {
   background-color: $bg-grey-color;
+
+  &::before {
+    content: "";
+    display: block;
+
+    background: url("../../img/bg-triangle-white.svg") no-repeat center top;
+    background-size: 100% auto;
+
+    height: 112px;
+    width: 100%;
+  }
 }
 
 .rates__list {

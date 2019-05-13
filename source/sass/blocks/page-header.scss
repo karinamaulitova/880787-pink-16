@@ -3,3 +3,24 @@
 .page-header {
   background-color: $menu-bg-color;
 }
+
+.page-header__wrapper {
+  display: flex;
+}
+
+.page-header__logo {
+  height: 23px;
+
+  margin: 22px 20px 25px;
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header__container {
+    display: flex;
+    align-items: center;
+
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}

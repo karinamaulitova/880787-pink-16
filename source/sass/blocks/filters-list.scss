@@ -2,6 +2,11 @@
 
 .filters-list {
   list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
 }
 
 .filters-list__button {
@@ -21,6 +26,8 @@
   border-radius: 50px;
 
   padding: 20px 91px;
+
+  margin-bottom: 12px;
 }
 
 .filters-list__reset-button {

@@ -1,5 +1,17 @@
 @import "../variables";
 
+.contacts {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts__heading-wrapper {
+  width: 228px;
+  margin: 0 auto;
+
+  display: inline-block;
+}
+
 .contacts__heading {
   font-size: 24px;
   font-weight: 300;
@@ -20,15 +32,87 @@
   text-decoration: none;
 }
 
+.contacts__bg-triangle-wrapper {
+  display: block;
+  position: relative;
+
+  &::after {
+
+    content: "";
+
+    background: url("../../img/bg-triangle-white-footer.svg") no-repeat center top;
+    background-size: 100% auto;
+
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    right: 0;
+
+    height: 55px;
+  }
+}
+
+
 .contacts__map {
   width: 100%;
 
-  margin-top: -45px;
+  border: none;
 }
 
-.contacts__bg-triangle {
-  width: 100%;
+//.contacts__bg-triangle {
+//  width: 100%;
+//
+//  position: relative;
+//  z-index: 2;
+//}
 
-  position: relative;
-  z-index: 2;
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__address-wrapper {
+    justify-content: flex-end;
+    align-self: center;
+
+    margin: 0 auto;
+  }
+
+  .contacts__bg-triangle-wrapper::after {
+    bottom: -89px;
+    height: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__container {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .contacts__address-wrapper {
+    margin: 0;
+
+    order: 2;
+  }
+
+  .contacts__tel-wrapper {
+    order: 1;
+  }
+
+  .contacts__email-wrapper {
+    order: 3;
+  }
+
+  .contacts__bg-triangle-wrapper::after {
+    bottom: -134px;
+    height: 135px;
+  }
 }

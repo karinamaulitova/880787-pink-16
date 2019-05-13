@@ -3,6 +3,10 @@
 .photo {
   background-color: $bg-grey-color;
   text-align: left;
+
+  margin: 20px;
+  max-width: 280px;
+  position: relative;
 }
 
 .photo__author {
@@ -19,4 +23,25 @@
   color: $pink-text-color;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.photo__image {
+  width: 100%;
+}
+
+.photo--panorama {
+  width: 100%;
+  max-width: none;
+  flex-shrink: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    margin: 10px;
+    width: 300px;
+  }
+
+  .photo--panorama {
+    width: 100%;
+  }
 }
