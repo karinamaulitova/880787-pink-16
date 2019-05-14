@@ -2,6 +2,7 @@
 
 .rates {
   background-color: $bg-grey-color;
+  padding-bottom: 50px;
 
   &::before {
     content: "";
@@ -21,6 +22,9 @@
   display: flex;
 
   overflow-y: hidden;
+
+  padding: 0;
+  margin-bottom: 45px;
 }
 
 .rates__header {
@@ -31,6 +35,8 @@
   text-transform: uppercase;
   text-align: center;
   color: $menu-text-color;
+
+  padding: 23px 0 21px;
 }
 
 .rates__table {
@@ -40,6 +46,9 @@
   height: 100%;
 
   border-collapse: collapse;
+
+  position: relative;
+  right: 160px;
 }
 
 .rates__table td,
@@ -49,6 +58,9 @@
 
 .rates__table td:first-of-type {
   border-right: none;
+
+  padding: 22px;
+  box-sizing: border-box;
 }
 
 .rates__table td:last-of-type {
@@ -76,10 +88,15 @@
 
 .rates__yes-svg {
   fill: #3dc644;
+
+  margin: 21px 18px 17px;
+  box-sizing: border-box;
 }
 
 .rates__no-svg {
   fill: #f25b26;
+  margin: 15px 19px 18px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -112,13 +129,16 @@
     display: none;
   }
 
+  .rates__table td:first-of-type {
+    padding: 14px;
+    box-sizing: border-box;
+
+    border: 2px solid $border-color;
+  }
+
   .rates__table--legend td {
     text-align: left;
     text-transform: none;
-
-    padding: 14px;
-
-    box-sizing: border-box;
   }
 
   .rates__no-svg {
@@ -127,10 +147,6 @@
 
   .rates__yes-svg {
     margin: 15px 0 10px;
-  }
-
-  .rates__table td:first-of-type {
-    border: 2px solid $border-color;
   }
 }
 

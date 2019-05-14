@@ -9,6 +9,10 @@
   flex-direction: column;
 }
 
+.contest-form__fieldset-wrapper {
+  margin-bottom: 40px;
+}
+
 .contest-form__fieldset-wrapper--app,
 .contest-form__fieldset-wrapper--achievements {
   background-color: $bg-grey-color;
