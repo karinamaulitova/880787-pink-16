@@ -202,143 +202,167 @@
   </section>
 
   <section class="rates">
-    <div class="rates__wrapper slider">
-      <ul class="rates__list slider__list">
-        <li class="rates__item slider__item">
-          <table class="rates__table">
-            <tr>
-              <th class="rates__header">База<span class="rates__cost">1,99 USD</span></th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>
-                <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
-                    enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+    <div class="rates__container">
+      <div class="rates__wrapper slider">
+        <ul class="rates__list slider__list">
+          <li class="rates__item rates__item--mobile-hidden">
+            <table class="rates__table rates__table--legend">
+              <tr>
+                <td>Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td>Смайлики</td>
+              </tr>
+              <tr>
+                <td>Комментарии</td>
+              </tr>
+            </table>
+          </li>
+          <li class="rates__item slider__item">
+            <table class="rates__table ">
+              <tr>
+                <th class="rates__header" colspan="2">
+                  <div>База</div>
+                  <div class="rates__cost">1,99 USD</div>
+                </th>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Розовый фильтр</td>
+                <td>
+                  <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
+                      enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
   <path
     d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
 </svg>
-              </td>
-            </tr>
-            <tr>
-              <td>Смайлики</td>
-              <td>
-                <svg class="rates__no-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752"
-                    enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Смайлики</td>
+                <td>
+                  <svg class="rates__no-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752"
+                      enable-background="new 0 0 26.752 26.752" xml:space="preserve">
   <path
     d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
 </svg>
-              </td>
-            </tr>
-            <tr>
-              <td>Комментарии</td>
-              <td>
-                <svg class="rates__no-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752"
-                    enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Комментарии</td>
+                <td>
+                  <svg class="rates__no-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752"
+                      enable-background="new 0 0 26.752 26.752" xml:space="preserve">
   <path
     d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
 </svg>
-              </td>
-            </tr>
-          </table>
-        </li>
-        <li class="rates__item slider__item">
-          <table class="rates__table">
-            <tr>
-              <th class="rates__header">Стандарт<span class="rates__cost">3,99 USD</span></th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>
-                <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
-                    enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="rates__item slider__item">
+            <table class="rates__table">
+              <tr>
+                <th class="rates__header" colspan="2">
+                  <div>Стандарт</div>
+                  <div class="rates__cost">3,99 USD</div>
+                </th>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Розовый фильтр</td>
+                <td>
+                  <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
+                      enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
   <path
     d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
 </svg>
-              </td>
-            </tr>
-            <tr>
-              <td>Смайлики</td>
-              <td>
-                <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
-                    enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Смайлики</td>
+                <td>
+                  <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
+                      enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
   <path
     d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
 </svg>
-              </td>
-            </tr>
-            <tr>
-              <td>Комментарии</td>
-              <td>
-                <svg class="rates__no-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752"
-                    enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Комментарии</td>
+                <td>
+                  <svg class="rates__no-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752"
+                      enable-background="new 0 0 26.752 26.752" xml:space="preserve">
   <path
     d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
 </svg>
-              </td>
-            </tr>
-          </table>
-        </li>
-        <li class="rates__item slider__item">
-          <table class="rates__table">
-            <tr>
-              <th class="rates__header">Анлим<span class="rates__cost">9,99 USD</span></th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>
-                <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
-                    enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="rates__item slider__item">
+            <table class="rates__table">
+              <tr>
+                <th class="rates__header" colspan="2">
+                  <div>Анлим</div>
+                  <div class="rates__cost">9,99 USD</div>
+                </th>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Розовый фильтр</td>
+                <td>
+                  <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
+                      enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
   <path
     d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
 </svg>
-              </td>
-            </tr>
-            <tr>
-              <td>Смайлики</td>
-              <td>
-                <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
-                    enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Смайлики</td>
+                <td>
+                  <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
+                      enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
   <path
     d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
 </svg>
-              </td>
-            </tr>
-            <tr>
-              <td>Комментарии</td>
-              <td>
-                <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
-                    enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                </td>
+              </tr>
+              <tr>
+                <td class="rates__table-item rates__table-item--hidden">Комментарии</td>
+                <td>
+                  <svg class="rates__yes-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09"
+                      enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
   <path
     d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
 </svg>
-              </td>
-            </tr>
-          </table>
-        </li>
-      </ul>
-      <p class="rates__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <p class="rates__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
     </div>
   </section>
 

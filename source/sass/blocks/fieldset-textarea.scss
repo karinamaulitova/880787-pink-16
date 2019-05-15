@@ -1,0 +1,40 @@
+@import "../variables";
+
+.fieldset-textarea__legend {
+  color: $pink-text-color;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fieldset-textarea {
+  padding: 0 22px;
+}
+
+.fieldset-textarea__textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  border: solid 2px #e5e5e5;
+  border-radius: 5px;
+
+  padding: 23px 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-textarea {
+    border: solid 2px #e5e5e5;
+
+    background-color: $menu-text-color;
+
+    padding: 0 60px;
+  }
+
+  .fieldset-textarea__textarea {
+    width: 100%;
+  }
+}

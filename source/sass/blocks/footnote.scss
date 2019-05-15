@@ -1,0 +1,15 @@
+@import "../variables";
+
+.footnote {
+  display: flex;
+  justify-content: center;
+}
+
+.footnote__star-item {
+  color: $pink-text-color;
+}
+
+.footnote__item {
+  line-height: 30px;
+  text-transform: uppercase;
+}

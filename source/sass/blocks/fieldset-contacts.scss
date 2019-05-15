@@ -1,0 +1,96 @@
+@import "../variables";
+
+.fieldset-contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-contacts__field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-contacts__label {
+  color: $pink-text-color;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+
+  margin-bottom: 29px;
+}
+
+.fieldset-contacts__legend {
+  display: none;
+
+  color: $pink-text-color;
+  text-transform: uppercase;
+
+  line-height: 30px;
+
+  padding: 0 32px;
+}
+
+.fieldset-contacts__text-input {
+  font-size: 18px;
+  line-height: 30px;
+
+  padding: 16px 22px 13px;
+
+  border: solid 2px #e5e5e5;
+  border-radius: 5px;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-contacts {
+    border: solid 2px #e5e5e5;
+
+    background-color: $menu-text-color;
+  }
+
+  .fieldset-contacts__legend {
+    display: block;
+  }
+
+  .fieldset-contacts__field-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .fieldset-contacts__label {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-contacts__wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .fieldset-checkbox__label--selfie {
+    order: 1;
+  }
+
+  .fieldset-checkbox__label--chuck {
+    order: 2;
+  }
+
+  .fieldset-checkbox__label--tower {
+    order: 3;
+  }
+
+  .fieldset-checkbox__label--sunburned {
+    order: 4;
+  }
+
+  .fieldset-checkbox__label--souvenirs {
+    order: 5;
+  }
+
+  .fieldset-checkbox__label--hotel {
+    order: 6;
+  }
+}

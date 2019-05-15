@@ -2,6 +2,7 @@
 
 .rates {
   background-color: $bg-grey-color;
+  padding-bottom: 50px;
 
   &::before {
     content: "";
@@ -17,6 +18,13 @@
 
 .rates__list {
   list-style: none;
+
+  display: flex;
+
+  overflow-y: hidden;
+
+  padding: 0;
+  margin-bottom: 45px;
 }
 
 .rates__header {
@@ -25,13 +33,38 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
   color: $menu-text-color;
+
+  padding: 23px 0 21px;
 }
 
 .rates__table {
   background-color: $menu-text-color;
 
   width: 280px;
+  height: 100%;
+
+  border-collapse: collapse;
+
+  position: relative;
+  right: 160px;
+}
+
+.rates__table td,
+.rates__table th {
+  border: 2px solid $border-color;
+}
+
+.rates__table td:first-of-type {
+  border-right: none;
+
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+.rates__table td:last-of-type {
+  border-left: none;
 }
 
 .rates__item {
@@ -39,6 +72,13 @@
   text-transform: uppercase;
 
   text-align: left;
+
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.rates__item--mobile-hidden {
+  display: none;
 }
 
 .rates__cost {
@@ -48,8 +88,71 @@
 
 .rates__yes-svg {
   fill: #3dc644;
+
+  margin: 21px 18px 17px;
+  box-sizing: border-box;
 }
 
 .rates__no-svg {
   fill: #f25b26;
+  margin: 15px 19px 18px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .rates__container {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .rates__item {
+    text-align: center;
+  }
+
+  .rates__item--mobile-hidden {
+    display: table;
+
+    align-self: flex-end;
+  }
+
+  .rates__table {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .rates__table-item--hidden {
+    display: none;
+  }
+
+  .rates__toggles {
+    display: none;
+  }
+
+  .rates__table td:first-of-type {
+    padding: 14px;
+    box-sizing: border-box;
+
+    border: 2px solid $border-color;
+  }
+
+  .rates__table--legend td {
+    text-align: left;
+    text-transform: none;
+  }
+
+  .rates__no-svg {
+    margin: 10px 0;
+  }
+
+  .rates__yes-svg {
+    margin: 15px 0 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__container {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }
