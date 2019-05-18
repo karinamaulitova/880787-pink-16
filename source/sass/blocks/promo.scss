@@ -11,7 +11,7 @@
   content: "";
   display: block;
 
-  background: url("../../img/iphone-hand-mobile@1x.png") 40% bottom no-repeat,
+  background: url("../../img/iphone-hand-mobile@1x.png") 4% bottom no-repeat,
     url("../../img/bg-back-mobile@1x.jpg") center no-repeat;
   background-size: auto, cover;
 
@@ -38,14 +38,16 @@
   border: 3px solid #ffffff;
   border-radius: 30px;
 
-  padding: 20px 39px 17px 40px;
+  padding: 15px 39px 17px 40px;
   margin-top: 28px;
 }
 
 .promo__availability {
   color: $menu-text-color;
+  font-weight: 300;
 
-  padding-bottom: 35px;
+  padding-bottom: 30px;
+  margin: 0 45px;
 }
 
 .promo__phrase {
@@ -53,27 +55,41 @@
 
   font-size: 40px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 50px;
   color: $menu-text-color;
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    background: url("../../img/bg-back-tablet@1x.jpg") center no-repeat;
+  }
+
   .promo--index {
     background: url("../../img/iphone-hand-tablet@1x.png") center bottom no-repeat,
-      url("../../img/bg-back-tablet@1x.jpg") center no-repeat;
-    background-size: 600px, cover;
+    url("../../img/bg-back-tablet@1x.jpg") center no-repeat;
+    background-size: 106%, cover;
 
     &::before {
       content: none;
     }
   }
 
-  .promo {
-    background: url("../../img/bg-back-tablet@1x.jpg") center no-repeat;
-  }
-
   .promo__phrase {
     display: block;
+
+    margin: 89px 51px 0 73px;
+  }
+
+  .promo__button {
+    padding: 15px 45px 17px;
+    margin-left: 20px;
+  }
+
+  .promo__availability {
+    font-size: 18px;
+    line-height: 24px;
+
+    margin: 14px 0 81px 22px;
   }
 
   .promo__wrapper {
@@ -95,21 +111,53 @@
     width: $tablet-width;
     margin: 0 auto;
   }
+
+  .promo__list {
+    margin: 45px 57px 14px 75px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .promo--index {
-    background: url("../../img/iphone-hand-desktop@1x.png") center bottom no-repeat,
-      url("../../img/bg-back-desktop@1x.jpg") center no-repeat;
-    background-size: 750px, cover;
-  }
-
   .promo {
     background: url("../../img/bg-back-desktop@1x.jpg") center no-repeat;
+  }
+
+  .promo--index {
+    background: url("../../img/iphone-hand-desktop@1x.png") 94% bottom no-repeat,
+    url("../../img/bg-back-desktop@1x.jpg") center no-repeat;
+    background-size: 87%, cover;
   }
 
   .promo__container {
     width: $desktop-width;
     margin: 0 auto;
+  }
+
+  .promo__wrapper {
+    margin-right: 415px;
+  }
+
+  .promo__phrase {
+    font-size: 50px;
+    line-height: 60px;
+
+    margin: 219px 225px 22px 0;
+  }
+
+  .promo__button {
+    font-size: 21px;
+
+    margin-left: -224px;
+    padding: 16px 28px;
+  }
+
+  .promo__list {
+    margin: 66px 228px 49px 0;
+  }
+
+  .promo__availability {
+    margin: 0 0 91px -225px;
+
+    width: 300px;
   }
 }

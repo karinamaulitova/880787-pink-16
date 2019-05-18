@@ -1,0 +1,31 @@
+@import "../variables";
+
+.social-links__item {
+  border: solid 3px rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+
+  width: 51px;
+  height: 51px;
+
+  box-sizing: border-box;
+}
+
+.social-links__item--facebook {
+  margin: 0 11px 0 13px;
+}
+
+.social-links__item svg {
+  fill: $pink-text-color;
+}
+
+.social-links__item--twitter svg {
+  margin-top: 15px;
+}
+
+.social-links__item--facebook svg {
+  margin-top: 11px;
+}
+
+.social-links__item--youtube svg {
+  margin: 15px 0 0 6px;
+}
