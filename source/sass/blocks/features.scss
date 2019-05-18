@@ -60,7 +60,7 @@
 
   .features__tagline {
     font-size: 40px;
-    line-height: normal;
+    line-height: 50px;
 
     margin: 0;
   }
@@ -84,10 +84,6 @@
   .features__list {
     flex-grow: 1;
     flex-basis: 0;
-  }
-
-  .features__tagline {
-    line-height: 50px;
   }
 
   .features__tagline-1-wrapper {

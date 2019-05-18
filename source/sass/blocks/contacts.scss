@@ -98,7 +98,8 @@
     justify-content: flex-end;
     align-self: center;
 
-    margin: 0 auto;
+    margin: 22px auto 27px;
+    padding: 0;
   }
 
   .contacts__bg-triangle-wrapper::after {
@@ -132,11 +133,6 @@
 
   .contacts__item--write {
     margin: 6px 0 3px;
-  }
-
-  .contacts__address-wrapper {
-    margin: 22px auto 27px;
-    padding: 0;
   }
 
   .contacts__address-wrapper .contacts__item-details {
