@@ -1,12 +1,24 @@
 @import "../variables";
 
 .photo {
-  background-color: $bg-grey-color;
   text-align: left;
 
-  margin: 20px;
+  margin: 0 0 20px;
+  padding: 0 20px;
   max-width: 280px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__link {
+  display: inline-block;
+}
+
+.photo__info-wrapper {
+  background-color: $bg-grey-color;
+  padding: 18px 17px 19px;
+  flex-grow: 1;
 }
 
 .photo__author {
@@ -15,8 +27,24 @@
 }
 
 .photo__publication-time {
+  font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.photo__like-wrapper {
+  display: flex;
+
+  margin: 10px 0 0 -7px;
+}
+
+.photo__like {
+  fill: $pink-text-color;
+
+  margin-right: 11px;
+
+  border: none;
+  background-color: transparent;
 }
 
 .photo__like-quantity {
@@ -26,22 +54,85 @@
 }
 
 .photo__image {
-  width: 100%;
+  display: block;
 }
 
 .photo--panorama {
-  width: 100%;
-  max-width: none;
-  flex-shrink: 0;
+  margin-top: 20px;
 }
+
+.photo--panorama .photo__image {
+  position: relative;
+  left: -20px;
+}
+
+.photo--panorama .photo__link::before {
+  content: "Панорама дня";
+
+  display: block;
+
+  background-color: $pink-text-color;
+
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  color: $menu-text-color;
+  text-transform: uppercase;
+
+  padding: 6px 20px;
+
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  z-index: 3;
+}
+
+.photo__comment {
+  margin: 0;
+}
+
 
 @media (min-width: $tablet-width) {
   .photo {
-    margin: 10px;
-    width: 300px;
+    max-width: 300px;
+    padding: 0 0 0 20px;
+    flex-grow: 1;
   }
 
+
   .photo--panorama {
-    width: 100%;
+    max-width: none;
+    padding: 0 20px;
+  }
+
+  .photo__info-wrapper {
+    padding: 15px 28px 18px;
+  }
+
+  .photo__like-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    margin: 13px -4px 0 1px;
+  }
+
+  .photo__like {
+    margin: 0;
+  }
+
+  .photo--panorama .photo__info-wrapper {
+    position: relative;
+  }
+
+  .photo--panorama .photo__like-wrapper {
+    position: absolute;
+    top: 7px;
+    right: 21px;
+  }
+
+  .photo--panorama .photo__like {
+    margin: 0 0 0 10px;
   }
 }

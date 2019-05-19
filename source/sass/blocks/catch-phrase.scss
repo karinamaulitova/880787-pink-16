@@ -1,3 +1,20 @@
+@import "../variables";
+
+.catch-phrase {
+  padding-top: 10px;
+  margin: 0 0 41px -4px;
+}
+
 .catch-phrase__item {
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catch-phrase {
+    margin: 0 0 70px 0;
+  }
+
+  .catch-phrase__item {
+    font-size: 18px;
+  }
 }

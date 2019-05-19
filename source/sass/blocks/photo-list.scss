@@ -3,4 +3,7 @@
 .photo-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
+
+  margin-top: 29px;
 }
