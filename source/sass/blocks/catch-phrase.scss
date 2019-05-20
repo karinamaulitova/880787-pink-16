@@ -18,3 +18,9 @@
     font-size: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catch-phrase {
+    margin-bottom: 68px;
+  }
+}

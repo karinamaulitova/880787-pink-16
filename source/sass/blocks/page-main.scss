@@ -1,0 +1,11 @@
+@import "../variables";
+
+.page-main {
+  margin-top: -67px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    margin-top: 0;
+  }
+}

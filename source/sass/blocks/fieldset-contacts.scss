@@ -3,6 +3,8 @@
 .fieldset-contacts__wrapper {
   display: flex;
   flex-direction: column;
+
+  padding: 12px 18px 0;
 }
 
 .fieldset-contacts__field-wrapper {
@@ -16,7 +18,7 @@
   text-align: left;
   text-transform: uppercase;
 
-  margin-bottom: 29px;
+  margin: 0 0 3px 22px;
 }
 
 .fieldset-contacts__legend {
@@ -34,9 +36,10 @@
   font-size: 18px;
   line-height: 30px;
 
-  padding: 16px 22px 13px;
+  padding: 16px 21px 13px;
+  margin-bottom: 19px;
 
-  border: solid 2px #e5e5e5;
+  border: solid 2px $border-color;
   border-radius: 5px;
 
   width: 100%;
@@ -45,52 +48,112 @@
 
 @media (min-width: $tablet-width) {
   .fieldset-contacts {
-    border: solid 2px #e5e5e5;
+    border: solid 2px $border-color;
 
     background-color: $menu-text-color;
+
+    padding: 0 40px;
   }
 
   .fieldset-contacts__legend {
     display: block;
+
+    margin-bottom: 19px;
   }
 
   .fieldset-contacts__field-wrapper {
     flex-direction: column-reverse;
     align-items: center;
+
+    position: relative;
+
+    margin-bottom: 23px;
+
+    &:first-of-type {
+      margin-bottom: 26px;
+    }
   }
 
   .fieldset-contacts__label {
     align-self: flex-start;
+
+    margin: 10px 0 3px 19px;
+
+    &::before {
+      content: "";
+
+      display: block;
+
+      position: absolute;
+      top: 2px;
+      right: 2px;
+
+      width: 60px;
+      height: 60px;
+
+      background-color: $border-color;
+    }
+  }
+
+  .fieldset-contacts__label--tel::after {
+    content: "";
+
+    display: block;
+
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    width: 20px;
+    height: 19px;
+
+    background: url("../../img/icon-phone.svg") center no-repeat;
+  }
+
+  .fieldset-contacts__label--email::after {
+    content: "";
+
+    display: block;
+
+    position: absolute;
+    top: 24px;
+    right: 23px;
+
+    width: 18px;
+    height: 13px;
+
+    background: url("../../img/icon-mail.svg") center no-repeat;
+  }
+
+  .fieldset-contacts__text-input {
+    padding: 14px 19px 15px;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .fieldset-contacts__wrapper {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    padding: 12px 0 0 0;
   }
 
-  .fieldset-checkbox__label--selfie {
-    order: 1;
+  .fieldset-contacts {
+    padding: 0 55px 10px;
   }
 
-  .fieldset-checkbox__label--chuck {
-    order: 2;
+  .fieldset-contacts__legend {
+    margin-bottom: 16px;
   }
 
-  .fieldset-checkbox__label--tower {
-    order: 3;
-  }
+  .fieldset-contacts__field-wrapper {
+    margin: 0;
 
-  .fieldset-checkbox__label--sunburned {
-    order: 4;
-  }
+    width: 377px;
 
-  .fieldset-checkbox__label--souvenirs {
-    order: 5;
-  }
-
-  .fieldset-checkbox__label--hotel {
-    order: 6;
+    &:first-of-type {
+      margin: 0;
+    }
   }
 }

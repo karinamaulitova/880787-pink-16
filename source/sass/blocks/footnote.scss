@@ -7,9 +7,19 @@
 
 .footnote__star-item {
   color: $pink-text-color;
+
+  margin: 3px 3px 0 0;
 }
 
-.footnote__item {
+.footnote__item::after {
+  content: "обязательные поля";
   line-height: 30px;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .footnote__item::after {
+    font-size: 14px;
+    content: "обязательные для заполнения поля";
+  }
 }

@@ -108,3 +108,9 @@
     margin-top: -4px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range-input {
+    width: 288px;
+  }
+}

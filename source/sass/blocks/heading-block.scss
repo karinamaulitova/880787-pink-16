@@ -1,20 +1,47 @@
 @import "../variables";
 
+.heading-block {
+  padding: 29px 0 81px;
+}
+
+.heading-block--form {
+  padding-bottom: 51px;
+}
+
 .heading-block__title {
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
   color: $menu-text-color;
 
-  padding: 29px 0 81px;
-  margin: 0 5px;
+  margin: 0 8px;
 }
 
 @media (min-width: $tablet-width) {
+  .heading-block {
+    padding: 68px 0 140px;
+  }
+
+  .heading-block--form {
+    padding: 68px 0 81px;
+  }
+
   .heading-block__title {
     font-size: 50px;
     line-height: 60px;
+  }
 
-    padding: 69px 0 140px;
+  .heading-block--form .heading-block__title {
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading-block {
+    padding: 175px 0 99px;
+  }
+
+  .heading-block__title {
+    margin: 0 150px;
   }
 }
