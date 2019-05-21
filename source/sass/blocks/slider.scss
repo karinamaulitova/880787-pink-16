@@ -79,7 +79,7 @@
 
 @media (min-width: $tablet-width) {
   .slider--rates {
-    padding-top: 68px;
+    padding-top: 2px;
   }
 
   .slider--rates .slider__container {
@@ -105,6 +105,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider--rates {
+    padding-top: 65px;
+  }
+
   .slider--rates .slider__list {
     justify-content: center;
   }

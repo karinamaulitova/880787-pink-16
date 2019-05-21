@@ -19,6 +19,14 @@
   margin-bottom: 90px;
 }
 
+.features-list__item--change p {
+  min-width: 260px;
+}
+
+.features-list__item--change br {
+  display: none;
+}
+
 .features-list__heading {
   font-size: 18px;
   line-height: 24px;
@@ -48,6 +56,10 @@
   .features-list__item--change {
     margin-left: -2px;
   }
+
+  .features-list__item--change br {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -69,6 +81,10 @@
 
   .features-list__item--friends {
     margin-right: -14px;
+  }
+
+  .features-list__item--change br {
+    display: none;
   }
 
   .features-list__heading {

@@ -66,6 +66,45 @@
   border-left: none;
 }
 
+
+.rates__header--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    display: block;
+
+    width: 74px;
+    height: 73px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: url("../../img/bg-hit.svg") center no-repeat;
+  }
+
+  &::after {
+    content: "хит";
+
+    display: block;
+
+    position: absolute;
+    top: 18px;
+    left: 9px;
+
+    transform: rotate(-45deg);
+
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $menu-text-color;
+  }
+}
+
 .rates__table td:first-of-type {
   border-right: none;
 
@@ -145,6 +184,21 @@
     padding: 12px 0 8px;
   }
 
+  .rates__header--hit {
+    &::before {
+      background: url("../../img/bg-hit-tablet.svg") center no-repeat;
+
+      top: -6px;
+      left: -7px;
+    }
+
+    &::after {
+      font-size: 14px;
+      top: 6px;
+      left: 7px;
+    }
+  }
+
   .rates__header-name {
     font-size: 16px;
 
@@ -205,6 +259,21 @@
 
   .rates__header {
     padding: 17px 67px 22px;
+  }
+
+  .rates__header--hit {
+    &::before {
+      background: url("../../img/bg-hit-desktop.svg") center no-repeat;
+
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      font-size: 14px;
+      top: 16px;
+      left: 10px;
+    }
   }
 
   .rates__item {

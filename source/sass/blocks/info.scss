@@ -111,8 +111,16 @@
     margin-bottom: 21px;
   }
 
+  .info__heading br {
+    display: none;
+  }
+
   .info__text {
     margin-bottom: 31px;
+  }
+
+  .info__text br {
+    display: none;
   }
 
   .info__timer-wrapper {

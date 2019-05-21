@@ -12,6 +12,19 @@
   height: 23px;
 
   margin: 22px 20px 25px;
+
+  cursor: pointer;
+}
+
+.page-header__logo:hover svg,
+.page-header__logo:focus svg {
+  fill: $pink-text-color;
+}
+
+.page-header__logo:active svg {
+  opacity: 0.3;
+
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {
