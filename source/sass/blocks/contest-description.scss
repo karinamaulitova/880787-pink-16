@@ -2,7 +2,7 @@
 
 .contest-description__item {
   line-height: 30px;
-  margin: 45px 25px;
+  margin: 45px 18px 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,11 +10,29 @@
     width: $tablet-width;
     margin: 0 auto;
   }
+
+  .contest-description__item {
+    font-size: 18px;
+    margin: 92px 50px 12px;
+
+    &::after {
+      content: "Пожалуйста, заполните форму ниже:";
+      display: block;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contest-description__container {
     width: $desktop-width;
     margin: 0 auto;
+  }
+
+  .contest-description__item {
+    margin: 93px 87px 69px;
+
+    &::after {
+      display: inline-block;
+    }
   }
 }

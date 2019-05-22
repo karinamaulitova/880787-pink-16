@@ -15,7 +15,9 @@
 .contacts__heading {
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 30px;
+
+  margin-top: 43px;
 }
 
 .contacts__item {
@@ -24,12 +26,34 @@
   font-weight: bold;
 }
 
+.contacts__item--tel {
+  margin-top: 12px;
+}
+
+.contacts__email-wrapper {
+  margin-left: 4px;
+}
+
+.contacts__item--write {
+  margin-top: 18px;
+}
+
+.contacts__address-wrapper {
+  padding-bottom: 33px;
+}
+
+.contacts__item--adress {
+  margin-top: 23px;
+}
+
 .contacts__item-details {
   color: $pink-text-color;
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
   text-decoration: none;
+
+  margin: 0 35px;
 }
 
 .contacts__bg-triangle-wrapper {
@@ -52,19 +76,11 @@
   }
 }
 
-
 .contacts__map {
   width: 100%;
 
   border: none;
 }
-
-//.contacts__bg-triangle {
-//  width: 100%;
-//
-//  position: relative;
-//  z-index: 2;
-//}
 
 @media (min-width: $tablet-width) {
   .contacts__container {
@@ -82,12 +98,49 @@
     justify-content: flex-end;
     align-self: center;
 
-    margin: 0 auto;
+    margin: 22px auto 27px;
+    padding: 0;
   }
 
   .contacts__bg-triangle-wrapper::after {
     bottom: -89px;
     height: 90px;
+  }
+
+  .contacts__heading-wrapper {
+    width: 380px;
+    margin: 0 auto;
+  }
+
+  .contacts__heading {
+    font-size: 40px;
+    line-height: 50px;
+
+    margin-top: 45px;
+  }
+
+  .contacts__tel-wrapper {
+    margin-left: 31px;
+  }
+
+  .contacts__item--tel {
+    margin-top: 8px;
+  }
+
+  .contacts__email-wrapper {
+    margin-right: 14px;
+  }
+
+  .contacts__item--write {
+    margin: 6px 0 3px;
+  }
+
+  .contacts__address-wrapper .contacts__item-details {
+    width: 215px;
+  }
+
+  .contacts__map {
+    height: 373px;
   }
 }
 
@@ -97,22 +150,53 @@
     margin: 0 auto;
   }
 
+  .contacts__heading {
+    font-size: 50px;
+    line-height: 60px;
+
+    margin-top: 66px;
+  }
+
+  .contacts__heading-wrapper {
+    width: 500px;
+  }
+
   .contacts__address-wrapper {
-    margin: 0;
+    margin: -7px 0 0 16px;
 
     order: 2;
   }
 
   .contacts__tel-wrapper {
     order: 1;
+
+    margin: 7px 0 0 12px;
   }
 
   .contacts__email-wrapper {
     order: 3;
+
+    margin: 8px -6px 0 0;
   }
 
   .contacts__bg-triangle-wrapper::after {
     bottom: -134px;
     height: 135px;
+  }
+
+  .contacts__item--tel {
+    margin-bottom: 21px;
+  }
+
+  .contacts__item--write {
+    margin-bottom: 23px;
+  }
+
+  .contacts__item--adress {
+    margin-bottom: 20px;
+  }
+
+  .contacts__map {
+    height: 515px;
   }
 }

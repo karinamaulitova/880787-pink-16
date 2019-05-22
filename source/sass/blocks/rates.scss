@@ -2,7 +2,8 @@
 
 .rates {
   background-color: $bg-grey-color;
-  padding-bottom: 50px;
+
+  padding-bottom: 46px;
 
   &::before {
     content: "";
@@ -16,15 +17,20 @@
   }
 }
 
+.rates__container {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+
 .rates__list {
   list-style: none;
 
   display: flex;
 
-  overflow-y: hidden;
 
   padding: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .rates__header {
@@ -36,19 +42,19 @@
   text-align: center;
   color: $menu-text-color;
 
-  padding: 23px 0 21px;
+  padding: 17px 0 20px;
+}
+
+.rates__header-name {
+  padding-bottom: 3px;
 }
 
 .rates__table {
   background-color: $menu-text-color;
 
-  width: 280px;
-  height: 100%;
+  width: 100%;
 
   border-collapse: collapse;
-
-  position: relative;
-  right: 160px;
 }
 
 .rates__table td,
@@ -56,10 +62,53 @@
   border: 2px solid $border-color;
 }
 
+.rates__table th:first-of-type {
+  border-left: none;
+}
+
+
+.rates__header--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    display: block;
+
+    width: 74px;
+    height: 73px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: url("../../img/bg-hit.svg") center no-repeat;
+  }
+
+  &::after {
+    content: "хит";
+
+    display: block;
+
+    position: absolute;
+    top: 18px;
+    left: 9px;
+
+    transform: rotate(-45deg);
+
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $menu-text-color;
+  }
+}
+
 .rates__table td:first-of-type {
   border-right: none;
 
-  padding: 22px;
+  padding: 13px 0 16px 21px;
   box-sizing: border-box;
 }
 
@@ -89,13 +138,13 @@
 .rates__yes-svg {
   fill: #3dc644;
 
-  margin: 21px 18px 17px;
+  margin: 9px 0 0 44px;
   box-sizing: border-box;
 }
 
 .rates__no-svg {
   fill: #f25b26;
-  margin: 15px 19px 18px;
+  margin: 4px 0 0 45px;
   box-sizing: border-box;
 }
 
@@ -103,6 +152,14 @@
   .rates__container {
     width: $tablet-width;
     margin: 0 auto;
+  }
+
+  .rates {
+    padding-bottom: 38px;
+  }
+
+  .rates__list {
+    padding-right: 20px;
   }
 
   .rates__item {
@@ -119,6 +176,37 @@
     width: 100%;
 
     box-sizing: border-box;
+
+    right: 0;
+  }
+
+  .rates__header {
+    padding: 12px 0 8px;
+  }
+
+  .rates__header--hit {
+    &::before {
+      background: url("../../img/bg-hit-tablet.svg") center no-repeat;
+
+      top: -6px;
+      left: -7px;
+    }
+
+    &::after {
+      font-size: 14px;
+      top: 6px;
+      left: 7px;
+    }
+  }
+
+  .rates__header-name {
+    font-size: 16px;
+
+    padding: 0;
+  }
+
+  .rates__cost {
+    font-size: 18px;
   }
 
   .rates__table-item--hidden {
@@ -130,7 +218,7 @@
   }
 
   .rates__table td:first-of-type {
-    padding: 14px;
+    padding: 7px 0 6px 14px;
     box-sizing: border-box;
 
     border: 2px solid $border-color;
@@ -142,11 +230,11 @@
   }
 
   .rates__no-svg {
-    margin: 10px 0;
+    margin: 8px 0 -4px;
   }
 
   .rates__yes-svg {
-    margin: 15px 0 10px;
+    margin: 10px 0 0;
   }
 }
 
@@ -154,5 +242,54 @@
   .rates__container {
     width: $desktop-width;
     margin: 0 auto;
+  }
+
+  .rates {
+    padding-bottom: 60px;
+  }
+
+  .rates__cost {
+    font-size: 24px;
+  }
+
+  .rates__item,
+  .rates__header-name {
+    font-size: 18px;
+  }
+
+  .rates__header {
+    padding: 17px 67px 22px;
+  }
+
+  .rates__header--hit {
+    &::before {
+      background: url("../../img/bg-hit-desktop.svg") center no-repeat;
+
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      font-size: 14px;
+      top: 16px;
+      left: 10px;
+    }
+  }
+
+  .rates__item {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+
+  .rates__yes-svg {
+    margin: 18px 0 8px;
+  }
+
+  .rates__no-svg {
+    margin: 16px 0 4px;
+  }
+
+  .rates__table td:first-of-type {
+    padding: 12px 64px 15px 25px;
   }
 }

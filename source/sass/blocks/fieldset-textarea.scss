@@ -5,10 +5,12 @@
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .fieldset-textarea {
-  padding: 0 22px;
+  padding: 0 18px;
 }
 
 .fieldset-textarea__textarea {
@@ -22,7 +24,7 @@
   border: solid 2px #e5e5e5;
   border-radius: 5px;
 
-  padding: 23px 19px;
+  padding: 14px 19px 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,7 +36,31 @@
     padding: 0 60px;
   }
 
+  .fieldset-textarea__legend {
+    padding: 0 38px;
+    margin-bottom: 31px;
+  }
+
   .fieldset-textarea__textarea {
     width: 100%;
+
+    padding: 14px 17px 0;
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-textarea {
+    padding: 0 57px;
+  }
+
+  .fieldset-textarea__legend {
+    margin-bottom: 27px;
+  }
+
+  .fieldset-textarea__textarea {
+    max-height: 128px;
+
+    margin-bottom: 36px;
   }
 }

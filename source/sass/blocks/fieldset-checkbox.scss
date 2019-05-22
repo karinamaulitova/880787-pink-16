@@ -8,22 +8,72 @@
 .fieldset-checkbox__label {
   font-size: 18px;
   line-height: 30px;
-
   text-align: left;
+
+  position: relative;
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+
+  margin-bottom: 52px;
+  padding-left: 88px;
+}
+
+.fieldset-checkbox__label:last-of-type {
+  margin-bottom: 47px;
+}
+
+.fieldset-checkbox__label::before {
+  content: "";
+
+  position: absolute;
+  top: -4px;
+  left: 18px;
+
+  width: 35px;
+  height: 35px;
+
+  border: solid 2px $border-color;
+  background-color: $menu-text-color;
+}
+
+.fieldset-checkbox__input:checked + .fieldset-checkbox__label::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 27px;
+
+  width: 22px;
+  height: 16px;
+
+  background: url("../../img/icon-yes.svg") center no-repeat;
 }
 
 .fieldset-checkbox__legend {
   color: $pink-text-color;
   text-transform: uppercase;
 
-  line-height: 30px;
+  line-height: normal;
 
   padding: 0 32px;
+  margin-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {
   .fieldset-checkbox {
     border: solid 2px #e5e5e5;
+
+    padding: 6px 29px;
+  }
+
+  .fieldset-checkbox__label::before {
+    left: 29px;
+  }
+
+  .fieldset-checkbox__input:checked + .fieldset-checkbox__label::after {
+    left: 38px;
   }
 }
 
@@ -33,7 +83,95 @@
     flex-wrap: wrap;
   }
 
+  .fieldset-checkbox {
+    padding: 6px 0 0 115px;
+  }
+
   .fieldset-checkbox__label {
     width: 33%;
+
+    box-sizing: border-box;
+  }
+
+  .fieldset-checkbox__label--selfie {
+    order: 1;
+    padding-left: 0;
+
+    &::before {
+      left: -59px;
+    }
+  }
+
+  .fieldset-checkbox__label--chuck {
+    order: 2;
+    padding-left: 46px;
+
+    &::before {
+      left: -14px;
+    }
+  }
+
+  .fieldset-checkbox__label--tower {
+    order: 3;
+    padding-left: 72px;
+
+    &::before {
+      left: 13px;
+    }
+  }
+
+  .fieldset-checkbox__label--sunburned {
+    order: 4;
+
+    padding-left: 0;
+    margin-bottom: 60px;
+
+    &::before {
+      left: -59px;
+    }
+  }
+
+  .fieldset-checkbox__label--souvenirs {
+    order: 5;
+
+    padding-left: 46px;
+    margin-bottom: 60px;
+
+    &::before {
+      left: -14px;
+    }
+  }
+
+  .fieldset-checkbox__label--hotel {
+    order: 6;
+
+    padding-left: 72px;
+    margin-bottom: 60px;
+
+    &::before {
+      left: 13px;
+    }
+  }
+
+  .fieldset-checkbox__input:checked + .fieldset-checkbox__label--selfie::after,
+  .fieldset-checkbox__input:checked + .fieldset-checkbox__label--sunburned::after {
+    top: 8px;
+    left: -50px;
+  }
+
+  .fieldset-checkbox__input:checked + .fieldset-checkbox__label--chuck::after,
+  .fieldset-checkbox__input:checked + .fieldset-checkbox__label--souvenirs::after {
+    top: 8px;
+    left: -6px;
+  }
+
+  .fieldset-checkbox__input:checked + .fieldset-checkbox__label--tower::after,
+  .fieldset-checkbox__input:checked + .fieldset-checkbox__label--hotel::after {
+    top: 8px;
+    left: 21px;
+  }
+
+  .fieldset-checkbox__label:last-of-type {
+    margin-bottom: 0;
   }
 }

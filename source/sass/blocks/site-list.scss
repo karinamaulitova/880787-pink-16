@@ -13,6 +13,18 @@
   font-weight: bold;
   line-height: 32px;
   text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.site-list__link:hover,
+.site-list__link:focus {
+  color: $pink-text-color;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
 }
 
 .site-list__item {
@@ -25,17 +37,33 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
-    margin: 0 173px 0 129px;
+    //justify-content: space-between;
+    margin-left: 204px;
   }
 
   .site-list__item {
     border: none;
     box-shadow: none;
+
+    margin-right: 80px;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid $menu-text-color;
+  }
+
+  .site-list__item:nth-last-of-type(2) {
+    margin-right: 79px;
+  }
+
+  .site-list__item:last-of-type {
+    margin-right: 0;
   }
 
   .site-list__link {
     font-weight: normal;
     line-height: 18px;
+
+    text-transform: none;
   }
 }

@@ -12,6 +12,25 @@
   height: 23px;
 
   margin: 22px 20px 25px;
+
+  cursor: pointer;
+}
+
+.page-header__logo:hover svg,
+.page-header__logo:focus svg {
+  fill: $pink-text-color;
+}
+
+.page-header__logo:active svg {
+  opacity: 0.3;
+
+  outline: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    padding: 22px 0 18px;
+  }
 }
 
 
@@ -21,6 +40,19 @@
     align-items: center;
 
     width: $desktop-width;
-    margin: 0 auto;
+    margin: 21px auto 19px;
+  }
+
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+  }
+
+  .page-header__wrapper {
+    padding: 0;
   }
 }

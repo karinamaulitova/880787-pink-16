@@ -5,9 +5,13 @@
 
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 
   padding-left: 0;
   width: calc(100% - 57px * 2);
-  margin: 32px 57px 28px;
+  margin: 32px 57px 14px;
+}
+
+.market-list__item--android {
+  margin: 0 37px 0 34px;
 }

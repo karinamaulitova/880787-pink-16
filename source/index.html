@@ -51,7 +51,7 @@
 </header>
 
 
-<main class="page-main">
+<main class="page-main page-main--index">
   <h1 class="visually-hidden">Pink - расскрасит ваши будни в розовый цвет</h1>
   <section class="promo promo--index">
     <div class="promo__container">
@@ -60,7 +60,7 @@
         <p class="promo__phrase">Взгляните на жизнь иначе!</p>
         <a class="promo__button button" href="#">Скачать приложение</a>
         <ul class="promo__list market-list">
-          <li class="market-list__item">
+          <li class="market-list__item market-list__item--ios">
             <a class="market-list__link" href="#" aria-label="iOS">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -71,7 +71,7 @@
 </svg>
             </a>
           </li>
-          <li class="market-list__item">
+          <li class="market-list__item market-list__item--android">
             <a class="market-list__link" href="#" aria-label="android">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -88,7 +88,7 @@
 </svg>
             </a>
           </li>
-          <li class="market-list__item">
+          <li class="market-list__item market-list__item--windows">
             <a class="market-list__link" href="#" aria-label="windows">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -124,15 +124,15 @@
       <div class="features__container">
         <div class="features__wrapper">
           <ul class="features__list features-list">
-            <li class="features-list__item">
+            <li class="features-list__item features-list__item--mood">
               <h3 class="features-list__heading">Поднимает настроение</h3>
               <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item features-list__item--change">
               <h3 class="features-list__heading">Меняет мир вокруг</h3>
-              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br/> усилить эффект</p>
             </li>
-            <li class="features-list__item">
+            <li class="features-list__item features-list__item--friends">
               <h3 class="features-list__heading">Заводит новых друзей</h3>
               <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -149,10 +149,12 @@
   </section>
   <section class="info">
     <div class="info__container">
-      <img src="img/icon-timer.svg">
+      <div class="info__timer-wrapper">
+        <p>24</p>
+      </div>
       <div class="info__wrapper">
-        <h3 class="info__heading">Эффект на 24 часа!</h3>
-        <p class="info__text">Британские ученые провели исследования и доказали, что положительный эффект от
+        <h3 class="info__heading">Эффект<br/> на 24 часа!</h3>
+        <p class="info__text">Британские ученые провели исследования и доказали, что положительный эффект <br/> от
           использования
           приложения длится целые сутки!</p>
         <a class="info__source-link" href="#">Узнать больше об исследовании</a>
@@ -160,50 +162,63 @@
     </div>
   </section>
   <section class="reviews">
-    <div class="reviews__container slider">
-      <ul class="reviews__list slider__list">
-        <li class="reviews__item slider__item">
-          <blockquote class="reviews__blockquote">
-            <div class="reviews__author-wrapper">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-            </div>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-        </li>
-        <li class="reviews__item slider__item">
-          <blockquote class="reviews__blockquote">
-            <div class="reviews__author-wrapper">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-            </div>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-        </li>
-        <li class="reviews__item slider__item">
-          <blockquote class="reviews__blockquote">
-            <div class="reviews__author-wrapper">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-            </div>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-        </li>
-      </ul>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
+    <div class="slider slider--reviews">
+      <input class="visually-hidden slider__radio slider__radio--1" type="radio" id="review-1" name="toggle1" checked>
+      <input class="visually-hidden slider__radio slider__radio--2" type="radio" id="review-2" name="toggle1">
+      <input class="visually-hidden slider__radio slider__radio--3" type="radio" id="review-3" name="toggle1">
+      <div class="slider__container">
+        <ul class="reviews__list slider__list">
+          <li class="reviews__item slider__item reviews-slide-1" id="reviews-slide-1">
+            <blockquote class="reviews__blockquote">
+              <div class="reviews__author-wrapper">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </div>
+              <p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </li>
+          <li class="reviews__item slider__item reviews-slide-2" id="reviews-slide-2">
+            <blockquote class="reviews__blockquote">
+              <div class="reviews__author-wrapper">
+                <cite class="reviews__author">Николай Иванов</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </div>
+              <p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </li>
+          <li class="reviews__item slider__item reviews-slide-3" id="reviews-slide-3">
+            <blockquote class="reviews__blockquote">
+              <div class="reviews__author-wrapper">
+                <cite class="reviews__author">Николай Сидоров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+              </div>
+              <p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+      <div class="reviews__container slider__controls-wrapper">
+        <div class="slider__controls">
+          <label for="review-1" class="slider__label slider__label--1">Первый</label>
+          <label for="review-2" class="slider__label slider__label--2">Второй</label>
+          <label for="review-3" class="slider__label slider__label--3">Третий</label>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="rates">
-    <div class="rates__container">
-      <div class="rates__wrapper slider">
+    <div class="slider slider--rates">
+      <input class="visually-hidden slider__radio slider__radio--1" type="radio" id="table-1" name="toggle2">
+      <input class="visually-hidden slider__radio slider__radio--2" type="radio" id="table-2" name="toggle2" checked>
+      <input class="visually-hidden slider__radio slider__radio--3" type="radio" id="table-3" name="toggle2">
+      <div class="slider__container">
         <ul class="rates__list slider__list">
           <li class="rates__item rates__item--mobile-hidden">
             <table class="rates__table rates__table--legend">
@@ -222,7 +237,7 @@
             <table class="rates__table ">
               <tr>
                 <th class="rates__header" colspan="2">
-                  <div>База</div>
+                  <div class="rates__header-name">База</div>
                   <div class="rates__cost">1,99 USD</div>
                 </th>
               </tr>
@@ -267,8 +282,8 @@
           <li class="rates__item slider__item">
             <table class="rates__table">
               <tr>
-                <th class="rates__header" colspan="2">
-                  <div>Стандарт</div>
+                <th class="rates__header rates__header--hit" colspan="2">
+                  <div class="rates__header-name">Стандарт</div>
                   <div class="rates__cost">3,99 USD</div>
                 </th>
               </tr>
@@ -314,7 +329,7 @@
             <table class="rates__table">
               <tr>
                 <th class="rates__header" colspan="2">
-                  <div>Анлим</div>
+                  <div class="rates__header-name">Анлим</div>
                   <div class="rates__cost">9,99 USD</div>
                 </th>
               </tr>
@@ -357,11 +372,13 @@
             </table>
           </li>
         </ul>
-        <p class="rates__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+      </div>
+      <div class="rates__container slider__controls-wrapper">
+        <div class="slider__controls">
+          <label for="table-1" class="slider__label slider__label--1">Первый</label>
+          <label for="table-2" class="slider__label slider__label--2">Второй</label>
+          <label for="table-3" class="slider__label slider__label--3">Третий</label>
+        </div>
       </div>
     </div>
   </section>
@@ -374,22 +391,23 @@
         </div>
         <div class="contacts__wrapper">
           <div class="contacts__tel-wrapper">
-            <p class="contacts__item">Звоните:</p>
+            <p class="contacts__item contacts__item--tel">Звоните:</p>
             <a href="tel:88125556666" class="contacts__item-details">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__email-wrapper">
-            <p class="contacts__item">Пишите:</p>
+            <p class="contacts__item contacts__item--write">Пишите:</p>
             <a href="mailto:mail@htmlacademy.ru" class="contacts__item-details">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__address-wrapper">
-            <p class="contacts__item">Приезжайте в гости:</p>
+            <p class="contacts__item contacts__item--adress">Приезжайте в гости:</p>
             <p class="contacts__item-details">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
       </div>
     </div>
-    <iframe src="https://yandex.ru/map-widget/v1/-/CCRrERkm" class="contacts__map" height="400"
-            allowfullscreen="true"></iframe>
+    <iframe class="contacts__map"
+            src="https://yandex.com/map-widget/v1/?um=constructor%3A536edbbef5e256c417c666d02c2274311ea9f9bb35d3692220167921e8c610ec&amp;source=constructor"
+            width="100%" height="373" frameborder="0"></iframe>
   </section>
 </main>
 
@@ -416,7 +434,7 @@
 </svg>
       </a>
       <ul class="page-footer__list social-links">
-        <li class="social-links__item">
+        <li class="social-links__item social-links__item--twitter">
           <a href="#" aria-label="Twitter">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -432,7 +450,7 @@
 
           </a>
         </li>
-        <li class="social-links__item">
+        <li class="social-links__item social-links__item--facebook">
           <a href="#" aria-label="Facebook">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -444,7 +462,7 @@
 
           </a>
         </li>
-        <li class="social-links__item">
+        <li class="social-links__item social-links__item--youtube">
           <a href="#" aria-label="YouTube">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -458,7 +476,7 @@
       </ul>
       <div class="page-footer__copyrigth-wrapper">
         <p class="page-footer__copyright">Разработано </p>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
               enable-background="new 0 0 26.943 34.09" xml:space="preserve">
