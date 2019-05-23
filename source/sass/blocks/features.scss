@@ -50,6 +50,10 @@
   line-height: 30px;
 }
 
+.features__wrapper {
+  padding-top: 59px;
+}
+
 .features__image {
   margin-bottom: -6px;
 }
@@ -74,6 +78,8 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
+
+    padding-top: 0;
   }
 
   .features__container {
@@ -82,7 +88,7 @@
   }
 
   .features__list {
-    margin: 55px 18px 0 22px;
+    margin: 54px 18px 0 22px;
   }
 
   .features__image-wrapper,
@@ -102,7 +108,8 @@
 
   .features__tagline-2-wrapper {
     width: 400px;
-    margin: -2px auto 44px;
+
+    margin: -2px auto 45px;
   }
 }
 

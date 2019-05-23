@@ -62,9 +62,8 @@
   }
 
   .photo-submit {
-    padding: 57px 0 56px;
+    padding: 57px 0 46px;
   }
-
 
   .photo-submit__range-mobile {
     display: none;
@@ -120,12 +119,16 @@
     justify-content: normal;
   }
 
+  .photo-submit__image {
+    margin-left: 20px;
+  }
+
   .photo-submit__button-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    margin-left: 107px;
+    margin-left: 87px;
   }
 
   .photo-submit {
