@@ -7,3 +7,15 @@
 
   margin-top: 29px;
 }
+
+
+@media (min-width: $desktop-width) {
+
+  .photo-list {
+    justify-content: space-between;
+  }
+
+  .photo-list__item {
+    padding: 0;
+  }
+}

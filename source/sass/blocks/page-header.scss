@@ -37,10 +37,10 @@
 @media (min-width: $desktop-width) {
   .page-header__container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     width: $desktop-width;
-    margin: 21px auto 19px;
+    margin: 29px auto 32px;
   }
 
   .page-header {
@@ -54,5 +54,9 @@
 
   .page-header__wrapper {
     padding: 0;
+  }
+
+  .page-header__logo {
+    margin: 0;
   }
 }

@@ -114,9 +114,9 @@
 
   .contacts__heading {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
 
-    margin-top: 45px;
+    margin: 45px 0 36px;
   }
 
   .contacts__tel-wrapper {
@@ -154,7 +154,7 @@
     font-size: 50px;
     line-height: 60px;
 
-    margin-top: 66px;
+    margin: 66px 0 39px;
   }
 
   .contacts__heading-wrapper {
@@ -180,7 +180,7 @@
   }
 
   .contacts__bg-triangle-wrapper::after {
-    bottom: -134px;
+    bottom: -133px;
     height: 135px;
   }
 

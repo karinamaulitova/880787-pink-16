@@ -112,7 +112,8 @@
   .photo-submit__container {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 54px 60px 55px;
+    background-color: $bg-grey-color;
   }
 
   .photo-submit__wrapper {
@@ -128,8 +129,8 @@
   }
 
   .photo-submit {
-    margin: 0 130px;
-    padding: 54px 0 55px;
+    margin: 0;
+    background: transparent;
   }
 
   .photo-submit__submit-button {

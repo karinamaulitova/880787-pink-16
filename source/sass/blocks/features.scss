@@ -9,9 +9,14 @@
 .features__content {
   background-color: $bg-grey-color;
 
+  position: relative;
+
   &::before {
     content: "";
     display: block;
+
+    position: absolute;
+    top: -1px;
 
     background: url("../../img/bg-triangle-white.svg") no-repeat center top;
     background-size: 100% auto;
@@ -22,7 +27,7 @@
 }
 
 .features__list {
-  margin: -52px 30px;
+  margin: 0 30px;
 }
 
 .features__tagline-1-wrapper,
@@ -77,13 +82,17 @@
   }
 
   .features__list {
-    margin: -57px 18px 0 22px;
+    margin: 55px 18px 0 22px;
   }
 
   .features__image-wrapper,
   .features__list {
     flex-grow: 1;
     flex-basis: 0;
+  }
+
+  .features__image-wrapper {
+    z-index: 2;
   }
 
   .features__tagline-1-wrapper {
@@ -114,12 +123,13 @@
   .features__wrapper {
     flex-direction: column-reverse;
 
-    margin: -114px 0 0 3px;
+    margin: 0 0 0 3px;
   }
 
   .features__image-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .features__image {
@@ -143,13 +153,10 @@
 
   .features__tagline-2-wrapper {
     width: 425px;
-  }
-
-  .features__content::before {
-    margin-top: 79px;
+    margin: 0 auto 76px;
   }
 
   .features__list {
-    margin: 24px 18px 0 1px;
+    margin: 18px 18px 0 1px;
   }
 }
