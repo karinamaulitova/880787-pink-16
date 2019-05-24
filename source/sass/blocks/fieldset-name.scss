@@ -34,6 +34,15 @@
   box-sizing: border-box;
 }
 
+.fieldset-name__text-input:hover,
+.fieldset-name__text-input:focus {
+  border-color: $menu-bg-color;
+}
+
+.fieldset-name__text-input:active {
+  border-color: $pink-text-color;
+}
+
 @media (min-width: $tablet-width) {
   .fieldset-name__field-wrapper {
     flex-direction: row;

@@ -34,10 +34,19 @@
   box-sizing: border-box;
 }
 
-.page-footer__copyright-link {
+.page-footer__copyright-link svg {
   margin-top: 9px;
 
   fill: $pink-text-color;
+}
+
+.page-footer__copyright-link:hover svg,
+.page-footer__copyright-link:focus svg {
+  fill: $menu-bg-color;
+}
+
+.page-footer__copyright-link:active svg {
+  fill: rgba(40, 54, 69, 0.3);;
 }
 
 .page-footer__logo {

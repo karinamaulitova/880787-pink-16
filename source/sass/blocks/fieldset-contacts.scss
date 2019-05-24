@@ -46,6 +46,15 @@
   box-sizing: border-box;
 }
 
+.fieldset-contacts__text-input:hover,
+.fieldset-contacts__text-input:focus {
+  border-color: $menu-bg-color;
+}
+
+.fieldset-contacts__text-input:active {
+  border-color: $pink-text-color;
+}
+
 @media (min-width: $tablet-width) {
   .fieldset-contacts {
     border: solid 2px $border-color;
@@ -89,7 +98,7 @@
       right: 2px;
 
       width: 60px;
-      height: 60px;
+      height: 59px;
 
       background-color: $border-color;
     }

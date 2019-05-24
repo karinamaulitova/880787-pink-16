@@ -11,13 +11,47 @@
 
 .main-nav__button {
   position: absolute;
-  right: 20px;
-  top: -50px;
+  right: 21px;
+  top: -63px;
+
+  width: 24px;
+  height: 23px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 29px;
+
+    background-color: $menu-text-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     margin: 0;
+  }
+
+  .main-nav__button {
+    top: -79px;
   }
 }
 

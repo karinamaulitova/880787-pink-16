@@ -51,6 +51,18 @@
 
   padding: 15px 39px 17px 40px;
   margin-top: 28px;
+
+  cursor: pointer;
+}
+
+.promo__button:hover,
+.promo__button:focus {
+  background-color: $menu-text-color;
+  color: $pink-text-color;
+}
+
+.promo__button:active {
+  color: rgba(210, 40, 86, 0.3);
 }
 
 .promo__availability {
