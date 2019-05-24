@@ -54,6 +54,11 @@
   background-color: rgba(40, 54, 69, 0.3);
 }
 
+.slider--rates .slider__controls-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
 .slider__radio--1:checked ~ .slider__container .slider__list {
   transform: translateX(0);
 }
