@@ -5,5 +5,17 @@
   flex-wrap: wrap;
   align-items: stretch;
 
-  margin-top: 29px;
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-list {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-list {
+    justify-content: space-between;
+  }
 }

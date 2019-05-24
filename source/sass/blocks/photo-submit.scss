@@ -62,9 +62,8 @@
   }
 
   .photo-submit {
-    padding: 57px 0 56px;
+    padding: 57px 0 46px;
   }
-
 
   .photo-submit__range-mobile {
     display: none;
@@ -112,11 +111,16 @@
   .photo-submit__container {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 54px 60px 55px;
+    background-color: $bg-grey-color;
   }
 
   .photo-submit__wrapper {
     justify-content: normal;
+  }
+
+  .photo-submit__image {
+    margin-left: 20px;
   }
 
   .photo-submit__button-wrapper {
@@ -124,12 +128,12 @@
     flex-direction: row;
     align-items: center;
 
-    margin-left: 107px;
+    margin-left: 87px;
   }
 
   .photo-submit {
-    margin: 0 130px;
-    padding: 54px 0 55px;
+    margin: 0;
+    background: transparent;
   }
 
   .photo-submit__submit-button {

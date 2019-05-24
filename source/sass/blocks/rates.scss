@@ -5,14 +5,19 @@
 
   padding-bottom: 46px;
 
+  position: relative;
+
   &::before {
     content: "";
     display: block;
 
+    position: absolute;
+    top: -1px;
+
     background: url("../../img/bg-triangle-white.svg") no-repeat center top;
     background-size: 100% auto;
 
-    height: 112px;
+    height: 100%;
     width: 100%;
   }
 }
@@ -155,7 +160,7 @@
   }
 
   .rates {
-    padding-bottom: 38px;
+    padding-bottom: 36px;
   }
 
   .rates__list {
@@ -245,7 +250,7 @@
   }
 
   .rates {
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 
   .rates__cost {

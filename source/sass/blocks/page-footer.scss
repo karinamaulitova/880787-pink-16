@@ -18,7 +18,7 @@
   margin: 11px 19px 0 18px;
 }
 
-.page-footer__copyrigth-wrapper {
+.page-footer__copyright-wrapper {
   display: flex;
   align-items: center;
 
@@ -72,7 +72,7 @@
     margin-left: 0;
   }
 
-  .page-footer__copyrigth-wrapper {
+  .page-footer__copyright-wrapper {
     margin-top: 11px;
   }
 }
@@ -88,10 +88,11 @@
   }
 
   .page-footer--photo {
-    padding-top: 70px;
+    padding-top: 21px;
   }
 
-  .page-footer__wrapper {
+  .page-footer__wrapper,
+  .page-footer--index .page-footer__wrapper {
     padding: 20px 0 25px;
   }
 

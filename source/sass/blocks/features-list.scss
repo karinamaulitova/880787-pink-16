@@ -16,7 +16,7 @@
 }
 
 .features-list__item--friends {
-  margin-bottom: 90px;
+  margin-bottom: 40px;
 }
 
 .features-list__item--change p {
@@ -79,6 +79,20 @@
     padding: 0 26px;
   }
 
+  .features-list__item--mood {
+    padding: 0 25px 0 29px;
+  }
+
+  .features-list__item--change {
+    margin-left: 0;
+
+    padding: 0 24px;
+  }
+
+  .features-list__item--change p {
+    min-width: 247px;
+  }
+
   .features-list__item--friends {
     margin-right: -14px;
   }
@@ -89,8 +103,8 @@
 
   .features-list__heading {
     font-size: 30px;
-    line-height: 32px;
+    line-height: 30px;
 
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 }

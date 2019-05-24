@@ -17,7 +17,7 @@
   font-weight: 300;
   line-height: 30px;
 
-  margin-top: 43px;
+  margin-top: 40px;
 }
 
 .contacts__item {
@@ -103,8 +103,8 @@
   }
 
   .contacts__bg-triangle-wrapper::after {
-    bottom: -89px;
-    height: 90px;
+    bottom: -404px;
+    height: 100%;
   }
 
   .contacts__heading-wrapper {
@@ -114,9 +114,9 @@
 
   .contacts__heading {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
 
-    margin-top: 45px;
+    margin: 45px 0 36px;
   }
 
   .contacts__tel-wrapper {
@@ -154,7 +154,7 @@
     font-size: 50px;
     line-height: 60px;
 
-    margin-top: 66px;
+    margin: 63px 0 39px;
   }
 
   .contacts__heading-wrapper {
@@ -180,8 +180,7 @@
   }
 
   .contacts__bg-triangle-wrapper::after {
-    bottom: -134px;
-    height: 135px;
+    bottom: -347px;
   }
 
   .contacts__item--tel {
