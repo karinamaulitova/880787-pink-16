@@ -4,76 +4,14 @@
   background-color: $menu-bg-color;
 
   width: 100%;
-  margin: 0 auto;
+
+  margin-left: auto;
+  margin-right: auto;
 
   position: relative;
 }
 
-.main-nav__button {
-  position: absolute;
-  right: 21px;
-  top: -63px;
-
-  width: 24px;
-  height: 23px;
-
-  font-size: 0;
-
-  background-color: transparent;
-  border: 0;
-
-  cursor: pointer;
-  outline: none;
-
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-
-    width: 5px;
-    height: 29px;
-
-    background-color: $menu-text-color;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.main-nav__button:hover::before,
-.main-nav__button:hover::after,
-.main-nav__button:focus::before,
-.main-nav__button:focus::after {
-  background-color: $pink-text-color;
-}
-
-.main-nav__button:active::before,
-.main-nav__button:active::after {
-  background-color: $pink-text-color;
-  opacity: 0.3;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    margin: 0;
-  }
-
-  .main-nav__button {
-    top: -79px;
-  }
-}
-
 @media (min-width: $desktop-width) {
-  .main-nav__button {
-    display: none;
-  }
-
   .main-nav {
     background-color: transparent;
   }
