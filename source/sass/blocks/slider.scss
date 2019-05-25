@@ -150,7 +150,25 @@
   }
 
   .slider__label {
+    width: 0;
+    height: 0;
+    opacity: 0.3;
+  }
+
+  .slider__label,
+  .slider__label:hover,
+  .slider__label:focus,
+  .slider__label:active {
     background-color: transparent;
+    outline: none;
+  }
+
+  .slider__label:hover {
+    opacity: 0.6;
+  }
+
+  .slider__label:active {
+    opacity: 0.1;
   }
 
   .slider__radio--1:checked ~ .slider__controls-wrapper {

@@ -23,6 +23,7 @@
   border: 0;
 
   cursor: pointer;
+  outline: none;
 
   &::before,
   &::after {
@@ -43,6 +44,19 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-nav__button:hover::before,
+.main-nav__button:hover::after,
+.main-nav__button:focus::before,
+.main-nav__button:focus::after {
+  background-color: $pink-text-color;
+}
+
+.main-nav__button:active::before,
+.main-nav__button:active::after {
+  background-color: $pink-text-color;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

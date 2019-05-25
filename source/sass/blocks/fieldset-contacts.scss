@@ -44,13 +44,14 @@
 
   width: 100%;
   box-sizing: border-box;
+  outline: none;
 }
 
-.fieldset-contacts__text-input:hover,
-.fieldset-contacts__text-input:focus {
+.fieldset-contacts__text-input:hover {
   border-color: $menu-bg-color;
 }
 
+.fieldset-contacts__text-input:focus,
 .fieldset-contacts__text-input:active {
   border-color: $pink-text-color;
 }

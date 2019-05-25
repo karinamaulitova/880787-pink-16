@@ -9,6 +9,25 @@
   padding: 40px 21px 25px 20px;
 }
 
+.page-footer__logo {
+  cursor: pointer;
+
+  outline: none;
+}
+
+.page-footer__logo-svg--desktop {
+  display: none;
+}
+
+.page-footer__logo:hover svg,
+.page-footer__logo:focus svg {
+  fill: $pink-text-color;
+}
+
+.page-footer__logo:active svg {
+  opacity: 0.3;
+}
+
 .page-footer__list {
   display: flex;
 
@@ -103,6 +122,22 @@
   .page-footer__wrapper,
   .page-footer--index .page-footer__wrapper {
     padding: 20px 0 25px;
+  }
+
+  .page-footer__logo-svg--mobile {
+    display: none;
+  }
+
+  .page-footer__logo-svg--desktop {
+    display: block;
+  }
+
+  .page-footer__logo-svg-text {
+    fill: $menu-bg-color;
+  }
+
+  .page-footer__logo:hover .page-footer__logo-svg-text {
+    fill: $pink-text-color;
   }
 
   .page-footer__copyright {

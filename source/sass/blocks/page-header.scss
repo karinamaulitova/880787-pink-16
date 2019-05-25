@@ -14,6 +14,14 @@
   margin: 22px 20px 25px;
 
   cursor: pointer;
+
+  outline: none;
+  fill: #ffffff;
+}
+
+.page-header__logo-svg--desktop,
+.page-header__logo-svg--tablet {
+  display: none;
 }
 
 .page-header__logo:hover svg,
@@ -23,16 +31,22 @@
 
 .page-header__logo:active svg {
   opacity: 0.3;
-
-  outline: none;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     padding: 5px 0 35px;
   }
-}
 
+  .page-header__logo-svg--desktop,
+  .page-header__logo-svg--mobile {
+    display: none;
+  }
+
+  .page-header__logo-svg--tablet {
+    display: block;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .page-header__container {
@@ -58,5 +72,14 @@
 
   .page-header__logo {
     margin: 0;
+  }
+
+  .page-header__logo-svg--mobile,
+  .page-header__logo-svg--tablet {
+    display: none;
+  }
+
+  .page-header__logo-svg--desktop {
+    display: block;
   }
 }

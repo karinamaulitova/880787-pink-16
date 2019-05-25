@@ -25,6 +25,16 @@
   border-radius: 5px;
 
   padding: 14px 19px 3px;
+  outline: none;
+}
+
+.fieldset-textarea__textarea:hover {
+  border-color: $menu-bg-color;
+}
+
+.fieldset-textarea__textarea:focus,
+.fieldset-textarea__textarea:active {
+  border-color: $pink-text-color;
 }
 
 @media (min-width: $tablet-width) {

@@ -31,6 +31,10 @@
   cursor: pointer;
   appearance: none;
   margin-top: -6px;
+
+  &:active {
+    background: $pink-text-color;
+  }
 }
 
 .range-input:focus::-webkit-slider-runnable-track {
@@ -55,6 +59,10 @@
   border-radius: 50px;
   background: #ffffff;
   cursor: pointer;
+
+  &:active {
+    background: $pink-text-color;
+  }
 }
 
 .range-input::-ms-track {
@@ -88,6 +96,10 @@
   border-radius: 50px;
   background: #ffffff;
   cursor: pointer;
+
+  &:active {
+    background: $pink-text-color;
+  }
 }
 
 .range-input:focus::-ms-fill-lower {
