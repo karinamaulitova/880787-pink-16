@@ -139,6 +139,11 @@
     margin-top: 35px;
   }
 
+  .slider--reviews .slider__container {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
   .slider--reviews .slider__controls {
     display: flex;
     justify-content: space-between;
@@ -188,6 +193,7 @@
 
       position: absolute;
       top: 0;
+      left: 11px;
     }
 
     & .slider__label--2::before {
@@ -202,6 +208,7 @@
 
       position: absolute;
       top: 0;
+      right: -7px;
     }
 
     & .slider__label--3 {
@@ -222,6 +229,7 @@
 
       position: absolute;
       top: 0;
+      left: 11px;
     }
 
     & .slider__label--2 {
@@ -240,6 +248,7 @@
 
       position: absolute;
       top: 0;
+      right: -7px;
     }
   }
 
@@ -260,6 +269,7 @@
 
       position: absolute;
       top: 0;
+      left: 11px;
     }
 
     & .slider__label--3::after {
@@ -274,6 +284,7 @@
 
       position: absolute;
       top: 0;
+      right: -7px;
     }
 
     & .slider__label--3 {

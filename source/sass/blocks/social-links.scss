@@ -8,6 +8,12 @@
   height: 51px;
 
   box-sizing: border-box;
+
+  margin-right: 11px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .social-links__item:hover,
@@ -21,14 +27,6 @@
 
 .social-links__item svg {
   fill: $pink-text-color;
-}
-
-.social-links__item {
-  margin-right: 11px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
 }
 
 .social-links__item--twitter svg {
