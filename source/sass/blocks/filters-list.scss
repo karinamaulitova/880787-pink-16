@@ -43,6 +43,10 @@
   opacity: 0.3;
 }
 
+.filters-list__button:hover svg {
+  opacity: 0.5;
+}
+
 @media (min-width: $tablet-width) {
   .filters-list__range {
     display: inline-block;

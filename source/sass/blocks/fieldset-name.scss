@@ -32,6 +32,16 @@
 
   width: 100%;
   box-sizing: border-box;
+  outline: none;
+}
+
+.fieldset-name__text-input:hover {
+  border-color: $menu-bg-color;
+}
+
+.fieldset-name__text-input:focus,
+.fieldset-name__text-input:active {
+  border-color: $pink-text-color;
 }
 
 @media (min-width: $tablet-width) {

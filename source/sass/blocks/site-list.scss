@@ -24,6 +24,7 @@
 }
 
 .site-list__link:active {
+  color: $pink-text-color;
   opacity: 0.3;
 }
 
@@ -37,7 +38,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
-    //justify-content: space-between;
+
     margin-left: 172px;
   }
 
@@ -49,8 +50,23 @@
     padding: 15px 0 7px;
   }
 
+  .site-list__link:active {
+    color: $menu-text-color;
+  }
+
   .site-list__item--active {
     border-bottom: 2px solid $menu-text-color;
+  }
+
+  .site-list__item--active .site-list__link {
+    cursor: default;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $menu-text-color;
+      opacity: 1;
+    }
   }
 
   .site-list__item:nth-last-of-type(2) {

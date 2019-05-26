@@ -38,6 +38,16 @@
   margin-bottom: 12px;
 }
 
+.photo-submit__submit-button:hover,
+.photo-submit__submit-button:focus {
+  background-color: $pink-text-color;
+  color: $menu-text-color;
+}
+
+.photo-submit__submit-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .photo-submit__reset-button {
   color: $reset-button-color;
   background-color: $bg-grey-color;
@@ -51,6 +61,19 @@
 
   padding: 16px 101px;
   margin-bottom: 41px;
+}
+
+.photo-submit__reset-button:hover,
+.photo-submit__reset-button:focus {
+  color: rgba(40, 54, 69, 0.3);
+  border-color: rgba(40, 54, 69, 0.3);
+}
+
+.photo-submit__reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(40, 54, 69);
+  border-color: rgb(40, 54, 69);
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,7 +95,7 @@
   .photo-submit__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .photo-submit__image {
@@ -86,6 +109,7 @@
     flex-basis: 0;
 
     max-width: 300px;
+    margin-left: 19px;
   }
 
   .photo-submit__button-wrapper {
@@ -129,6 +153,10 @@
     align-items: center;
 
     margin-left: 87px;
+  }
+
+  .photo-submit__filters-wrapper {
+    margin-left: 0;
   }
 
   .photo-submit {

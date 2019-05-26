@@ -30,24 +30,17 @@
   margin: 0 30px;
 }
 
-.features__tagline-1-wrapper,
-.features__tagline-2-wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.features__tagline-1-wrapper {
-  margin-bottom: 26px;
-}
-
-.features__tagline-2-wrapper {
-  margin-bottom: 34px;
-}
-
 .features__tagline {
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
+
+  width: 320px;
+  margin: 0 auto 34px;
+
+  &:first-of-type {
+    margin-bottom: 26px;
+  }
 }
 
 .features__wrapper {
@@ -71,7 +64,14 @@
     font-size: 40px;
     line-height: 50px;
 
-    margin: 0;
+    width: 400px;
+
+    margin: -2px auto 45px;
+
+    &:first-of-type {
+      width: 600px;
+      margin: -11px auto 0;
+    }
   }
 
   .features__wrapper {
@@ -91,25 +91,23 @@
     margin: 54px 18px 0 22px;
   }
 
-  .features__image-wrapper,
+  .features__image-wrapper {
+    width: 268px;
+  }
+
+  .features__image {
+    margin: 0 auto;
+    height: 481px;
+  }
+
+  .features__images-wrapper,
   .features__list {
     flex-grow: 1;
     flex-basis: 0;
   }
 
-  .features__image-wrapper {
+  .features__images-wrapper {
     z-index: 2;
-  }
-
-  .features__tagline-1-wrapper {
-    width: 600px;
-    margin: -11px auto 0;
-  }
-
-  .features__tagline-2-wrapper {
-    width: 400px;
-
-    margin: -2px auto 45px;
   }
 }
 
@@ -133,17 +131,22 @@
     margin: 0 0 0 3px;
   }
 
-  .features__image-wrapper {
+  .features__images-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  .features__image {
-    margin: 0;
+  .features__image-wrapper {
+    width: 292px;
   }
 
-  .features__image-wrapper,
+  .features__image {
+    margin: 0 auto;
+    height: 302px;
+  }
+
+  .features__images-wrapper,
   .features__list {
     flex-grow: 0;
     flex-basis: auto;
@@ -152,15 +155,14 @@
   .features__tagline {
     font-size: 50px;
     line-height: 60px;
-  }
 
-  .features__tagline-1-wrapper {
-    width: 100%;
-  }
-
-  .features__tagline-2-wrapper {
     width: 425px;
     margin: 0 auto 76px;
+
+    &:first-of-type {
+      width: 100%;
+      margin: -11px auto 0;
+    }
   }
 
   .features__list {

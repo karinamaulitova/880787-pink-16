@@ -4,28 +4,14 @@
   background-color: $menu-bg-color;
 
   width: 100%;
-  margin: 0 auto;
+
+  margin-left: auto;
+  margin-right: auto;
 
   position: relative;
 }
 
-.main-nav__button {
-  position: absolute;
-  right: 20px;
-  top: -50px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    margin: 0;
-  }
-}
-
 @media (min-width: $desktop-width) {
-  .main-nav__button {
-    display: none;
-  }
-
   .main-nav {
     background-color: transparent;
   }

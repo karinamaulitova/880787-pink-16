@@ -65,6 +65,15 @@
   border-radius: 50px;
 }
 
+.fieldset-radio__input:hover + .fieldset-radio__label::before,
+.fieldset-radio__input:focus + .fieldset-radio__label::before {
+  border-color: $menu-bg-color;
+}
+
+.fieldset-radio__input:active + .fieldset-radio__label::before {
+  border-color: $pink-text-color;
+}
+
 @media (min-width: $tablet-width) {
   .fieldset-radio {
     border: solid 2px #e5e5e5;

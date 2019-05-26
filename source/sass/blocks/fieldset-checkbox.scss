@@ -51,6 +51,15 @@
   background: url("../../img/icon-yes.svg") center no-repeat;
 }
 
+.fieldset-checkbox__input:hover + .fieldset-checkbox__label::before,
+.fieldset-checkbox__input:focus + .fieldset-checkbox__label::before {
+  border-color: $menu-bg-color;
+}
+
+.fieldset-checkbox__input:active + .fieldset-checkbox__label::before {
+  border-color: $pink-text-color;
+}
+
 .fieldset-checkbox__legend {
   color: $pink-text-color;
   text-transform: uppercase;

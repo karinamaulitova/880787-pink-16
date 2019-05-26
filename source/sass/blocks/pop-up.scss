@@ -1,0 +1,154 @@
+@import "../variables";
+
+.pop-up {
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  z-index: 100;
+
+  background-color: $menu-text-color;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.pop-up__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pop-up--warning .pop-up__wrapper {
+  padding: 46px 22px 52px;
+}
+
+.pop-up--submit .pop-up__wrapper {
+  padding-top: 46px;
+}
+
+.pop-up__heading {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+
+  color: $text-black-color;
+}
+
+.pop-up__text {
+  width: 275px;
+
+  margin: 0 24px 43px;
+}
+
+.pop-up__button-wrapper {
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 50px 22px 54px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pop-up--submit .pop-up__button-wrapper {
+  background-color: $bg-grey-color;
+}
+
+.pop-up__button {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $menu-text-color;
+  background-color: #2aab6d;
+  border-radius: 3px;
+  border: none;
+
+  width: 100%;
+
+  padding: 16px 46px;
+
+  cursor: pointer;
+  outline: none;
+
+  align-self: center;
+}
+
+.pop-up__button:hover,
+.pop-up__button:focus {
+  background-color: #1c9b5e;
+}
+
+.pop-up__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pop-up__button:disabled {
+  background-color: $border-color;
+}
+
+.pop-up--show,
+.pop-up--error {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+
+  70% {
+    transform: translate(-50%, -40%);
+  }
+
+  90% {
+    transform: translate(-50%, -55%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pop-up {
+    max-width: 460px;
+  }
+
+  .pop-up__text {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pop-up {
+    max-width: 780px;
+  }
+
+  .pop-up__text {
+    width: 320px;
+  }
+
+  .pop-up--warning .pop-up__wrapper {
+    padding: 46px 0 0;
+  }
+
+  .pop-up__button-wrapper {
+    background-color: $bg-grey-color;
+    padding: 50px 162px 54px;
+  }
+}

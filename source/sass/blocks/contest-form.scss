@@ -65,6 +65,19 @@
   align-self: center;
 }
 
+.contest-form__button:hover,
+.contest-form__button:focus {
+  background-color: #1c9b5e;
+}
+
+.contest-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contest-form__button:disabled {
+  background-color: $border-color;
+}
+
 @media (min-width: $tablet-width) {
   .contest-form__container {
     width: $tablet-width;
