@@ -33,6 +33,10 @@
   padding-top: 50px;
 }
 
+.promo--index .promo__container {
+  padding-top: 0;
+}
+
 .promo__image {
   margin-bottom: -7px;
 }
@@ -115,6 +119,10 @@
     &::before {
       content: none;
     }
+  }
+
+  .promo--padding-top .promo__container {
+    padding-top: 50px;
   }
 
   .promo__phrase {

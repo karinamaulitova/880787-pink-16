@@ -17,7 +17,7 @@
 }
 
 .gallery__container {
-  width: $mobile-width;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -29,6 +29,10 @@
 
   .gallery {
     margin-top: 92px;
+  }
+
+  .gallery__list {
+    padding: 0 20px;
   }
 
   .gallery__description {
@@ -46,5 +50,9 @@
 
   .gallery__description {
     margin: 0 160px;
+  }
+
+  .gallery__list {
+    padding: 0;
   }
 }

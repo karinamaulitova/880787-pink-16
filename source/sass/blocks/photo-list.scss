@@ -8,14 +8,15 @@
   margin-top: 20px;
 }
 
+.photo-list__item {
+  width: 300px;
+  box-sizing: border-box;
+}
+
+
 @media (min-width: $tablet-width) {
   .photo-list {
     margin-top: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photo-list {
     justify-content: space-between;
   }
 }
