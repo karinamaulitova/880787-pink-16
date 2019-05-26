@@ -132,11 +132,11 @@
     display: block;
   }
 
-  .page-footer__logo-svg-text {
+  .page-footer__logo {
     fill: $menu-bg-color;
   }
 
-  .page-footer__logo:hover .page-footer__logo-svg-text {
+  .page-footer__logo:hover {
     fill: $pink-text-color;
   }
 
