@@ -12,6 +12,10 @@
   margin: 32px 57px 14px;
 }
 
-.market-list__item--android {
-  margin: 0 37px 0 34px;
+.market-list__item {
+  margin-right: 37px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }

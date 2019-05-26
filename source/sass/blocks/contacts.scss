@@ -62,7 +62,8 @@
 .contacts__item-details {
   color: $pink-text-color;
   font-size: 24px;
-  line-height: normal;
+  line-height: 33px;
+  vertical-align: text-top;
   font-weight: 300;
   text-decoration: none;
 
@@ -74,7 +75,6 @@
   position: relative;
 
   &::after {
-
     content: "";
 
     background: url("../../img/bg-triangle-white-footer.svg") no-repeat center top;
@@ -99,6 +99,7 @@
   .contacts__container {
     width: $tablet-width;
     margin: 0 auto;
+    padding-top: 2px;
   }
 
   .contacts__wrapper {
@@ -161,6 +162,7 @@
   .contacts__container {
     width: $desktop-width;
     margin: 0 auto;
+    padding-top: 0;
   }
 
   .contacts__heading {

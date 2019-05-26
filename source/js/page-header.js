@@ -1,5 +1,6 @@
 var pageHeader = document.querySelector(".page-header");
 var menuButton = document.querySelector(".page-header__menu-button");
+var promoMargin = document.querySelector(".promo--margin-top");
 
 menuButton.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -9,3 +10,6 @@ menuButton.addEventListener("click", function (evt) {
     pageHeader.classList.add("page-header--menu-open");
   }
 })
+
+
+

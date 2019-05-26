@@ -39,6 +39,10 @@
     margin-bottom: 10px;
   }
 
+  .info__text br:first-of-type {
+    display: none;
+  }
+
   .info__source-link {
     color: $pink-text-color;
   }
@@ -119,8 +123,12 @@
     margin-bottom: 29px;
   }
 
-  .info__text br {
+  .info__text br:last-of-type {
     display: none;
+  }
+
+  .info__text br:first-of-type {
+    display: block;
   }
 
   .info__timer-wrapper {

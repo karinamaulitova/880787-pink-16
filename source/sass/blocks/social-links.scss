@@ -23,8 +23,12 @@
   fill: $pink-text-color;
 }
 
-.social-links__item--facebook {
-  margin: 0 11px 0 13px;
+.social-links__item {
+  margin-right: 11px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .social-links__item--twitter svg {
