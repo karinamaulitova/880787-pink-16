@@ -13,6 +13,7 @@
   cursor: pointer;
 
   outline: none;
+  margin-bottom: 22px;
 }
 
 .page-footer__logo-svg--desktop {
@@ -65,11 +66,7 @@
 }
 
 .page-footer__copyright-link:active svg {
-  fill: rgba(40, 54, 69, 0.3);;
-}
-
-.page-footer__logo {
-  margin-bottom: 22px;
+  fill: rgba(40, 54, 69, 0.3);
 }
 
 @media (min-width: $tablet-width) {
