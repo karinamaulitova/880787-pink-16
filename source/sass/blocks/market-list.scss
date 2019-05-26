@@ -5,17 +5,7 @@
 
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
-
+  align-items: flex-end;
   padding-left: 0;
-  width: calc(100% - 57px * 2);
-  margin: 32px 57px 14px;
-}
-
-.market-list__item {
-  margin-right: 37px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
+  margin: 29px 19px 0;
 }
